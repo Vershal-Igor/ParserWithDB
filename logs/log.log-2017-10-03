@@ -1,0 +1,663 @@
+2017-10-03 13:25:36 INFO  xml.XMLParserTest:54 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 13:25:47 INFO  xml.XMLParserTest:54 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 13:30:24 INFO  json.JSONParserTest:35 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 13:39:18 INFO  json.JSONParserTest:35 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 13:39:34 INFO  json.JSONParserTest:35 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 13:41:32 INFO  txt.TXTParserTest:56 - Jonathan Hult
+2017-10-03 13:41:32 INFO  txt.TXTParserTest:58 - Ricky Ho
+2017-10-03 13:41:32 INFO  txt.TXTParserTest:60 - UNKNOWN
+2017-10-03 13:41:32 INFO  txt.TXTParserTest:50 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 13:43:07 INFO  xml.XMLParserTest:60 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 13:43:18 INFO  json.JSONParserTest:38 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 13:43:32 INFO  txt.TXTParserTest:56 - Jonathan Hult
+2017-10-03 13:43:32 INFO  txt.TXTParserTest:58 - Ricky Ho
+2017-10-03 13:43:32 INFO  txt.TXTParserTest:60 - UNKNOWN
+2017-10-03 13:43:32 INFO  txt.TXTParserTest:50 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 13:43:42 INFO  json.JSONParserTest:38 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 13:43:42 INFO  txt.TXTParserTest:56 - Jonathan Hult
+2017-10-03 13:43:42 INFO  txt.TXTParserTest:58 - Ricky Ho
+2017-10-03 13:43:42 INFO  txt.TXTParserTest:60 - UNKNOWN
+2017-10-03 13:43:42 INFO  txt.TXTParserTest:50 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 13:43:42 INFO  xml.XMLParserTest:60 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 15:01:03 INFO  xml.XMLParserTest:60 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 15:01:11 INFO  xml.XMLParserTest:60 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 15:01:19 INFO  txt.TXTParserTest:56 - Jonathan Hult
+2017-10-03 15:01:19 INFO  txt.TXTParserTest:59 - Ricky Ho
+2017-10-03 15:01:19 INFO  txt.TXTParserTest:62 - UNKNOWN
+2017-10-03 15:01:19 INFO  txt.TXTParserTest:50 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 15:01:27 INFO  json.JSONParserTest:38 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 15:11:06 INFO  xml.XMLParserTest:60 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 15:11:23 INFO  xml.XMLParserTest:60 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 15:13:21 INFO  txt.TXTParserTest:68 - Jonathan Hult
+2017-10-03 15:13:21 INFO  txt.TXTParserTest:74 - Ricky Ho
+2017-10-03 15:13:21 INFO  txt.TXTParserTest:80 - UNKNOWN
+2017-10-03 15:13:21 INFO  txt.TXTParserTest:50 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 15:14:22 INFO  xml.XMLParserTest:60 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 15:20:52 INFO  json.JSONParserTest:43 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 15:22:50 INFO  txt.TXTParserTest:56 - Jonathan Hult
+2017-10-03 15:22:50 INFO  txt.TXTParserTest:62 - Ricky Ho
+2017-10-03 15:22:50 INFO  txt.TXTParserTest:68 - UNKNOWN
+2017-10-03 15:22:50 INFO  txt.TXTParserTest:50 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 15:23:08 INFO  json.JSONParserTest:43 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 15:23:20 INFO  xml.XMLParserTest:60 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 15:42:08 INFO  json.JSONParserTest:43 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 15:42:23 INFO  txt.TXTParserTest:60 - Jonathan Hult
+2017-10-03 15:42:23 INFO  txt.TXTParserTest:66 - Ricky Ho
+2017-10-03 15:42:23 INFO  txt.TXTParserTest:72 - UNKNOWN
+2017-10-03 15:42:23 INFO  txt.TXTParserTest:54 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 15:46:44 INFO  json.JSONParserTest:43 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 15:46:44 INFO  txt.TXTParserTest:60 - Jonathan Hult
+2017-10-03 15:46:44 INFO  txt.TXTParserTest:66 - Ricky Ho
+2017-10-03 15:46:44 INFO  txt.TXTParserTest:72 - UNKNOWN
+2017-10-03 15:46:44 INFO  txt.TXTParserTest:54 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 15:46:44 INFO  xml.XMLParserTest:66 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 16:07:59 ERROR txt.TXTParser:64 - No such file:google.com
+java.io.FileNotFoundException: google.com (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at com.epam.impl.txt.TXTParser.returnAuthorName(TXTParser.java:50)
+	at com.epam.impl.txt.TXTParser.pullAuthorName(TXTParser.java:71)
+	at com.epam.impl.txt.TXTParserTest.test_valid_domain(TXTParserTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2017-10-03 16:07:59 ERROR txt.TXTParser:64 - No such file:mkyong.com
+java.io.FileNotFoundException: mkyong.com (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at com.epam.impl.txt.TXTParser.returnAuthorName(TXTParser.java:50)
+	at com.epam.impl.txt.TXTParser.pullAuthorName(TXTParser.java:71)
+	at com.epam.impl.txt.TXTParserTest.test_valid_domain(TXTParserTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2017-10-03 16:07:59 ERROR txt.TXTParser:64 - No such file:twitter.com
+java.io.FileNotFoundException: twitter.com (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at com.epam.impl.txt.TXTParser.returnAuthorName(TXTParser.java:50)
+	at com.epam.impl.txt.TXTParser.pullAuthorName(TXTParser.java:71)
+	at com.epam.impl.txt.TXTParserTest.test_valid_domain(TXTParserTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2017-10-03 16:09:11 ERROR txt.TXTParser:64 - No such file:Jonathan Hult
+java.io.FileNotFoundException: Jonathan Hult (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at com.epam.impl.txt.TXTParser.returnAuthorName(TXTParser.java:50)
+	at com.epam.impl.txt.TXTParser.pullAuthorName(TXTParser.java:71)
+	at com.epam.impl.txt.TXTParserTest.test_valid_domain(TXTParserTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2017-10-03 16:09:11 ERROR txt.TXTParser:64 - No such file:Ricky Ho
+java.io.FileNotFoundException: Ricky Ho (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at com.epam.impl.txt.TXTParser.returnAuthorName(TXTParser.java:50)
+	at com.epam.impl.txt.TXTParser.pullAuthorName(TXTParser.java:71)
+	at com.epam.impl.txt.TXTParserTest.test_valid_domain(TXTParserTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2017-10-03 16:09:11 ERROR txt.TXTParser:64 - No such file:UNKNOWN
+java.io.FileNotFoundException: UNKNOWN (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at com.epam.impl.txt.TXTParser.returnAuthorName(TXTParser.java:50)
+	at com.epam.impl.txt.TXTParser.pullAuthorName(TXTParser.java:71)
+	at com.epam.impl.txt.TXTParserTest.test_valid_domain(TXTParserTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2017-10-03 16:10:17 ERROR txt.TXTParser:64 - No such file:Jonathan Hult
+java.io.FileNotFoundException: Jonathan Hult (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at com.epam.impl.txt.TXTParser.returnAuthorName(TXTParser.java:50)
+	at com.epam.impl.txt.TXTParser.pullAuthorName(TXTParser.java:71)
+	at com.epam.impl.txt.TXTParserTest.test_valid_domain(TXTParserTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2017-10-03 16:10:17 ERROR txt.TXTParser:64 - No such file:Ricky Ho
+java.io.FileNotFoundException: Ricky Ho (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at com.epam.impl.txt.TXTParser.returnAuthorName(TXTParser.java:50)
+	at com.epam.impl.txt.TXTParser.pullAuthorName(TXTParser.java:71)
+	at com.epam.impl.txt.TXTParserTest.test_valid_domain(TXTParserTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2017-10-03 16:10:17 ERROR txt.TXTParser:64 - No such file:UNKNOWN
+java.io.FileNotFoundException: UNKNOWN (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at com.epam.impl.txt.TXTParser.returnAuthorName(TXTParser.java:50)
+	at com.epam.impl.txt.TXTParser.pullAuthorName(TXTParser.java:71)
+	at com.epam.impl.txt.TXTParserTest.test_valid_domain(TXTParserTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2017-10-03 16:10:57 ERROR txt.TXTParser:64 - No such file:src/main/resources/files
+java.io.FileNotFoundException: src\main\resources\files (Access is denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at com.epam.impl.txt.TXTParser.returnAuthorName(TXTParser.java:50)
+	at com.epam.impl.txt.TXTParser.pullAuthorName(TXTParser.java:71)
+	at com.epam.impl.txt.TXTParserTest.test_valid_domain(TXTParserTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2017-10-03 16:10:57 ERROR txt.TXTParser:64 - No such file:src/main/resources/files
+java.io.FileNotFoundException: src\main\resources\files (Access is denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at com.epam.impl.txt.TXTParser.returnAuthorName(TXTParser.java:50)
+	at com.epam.impl.txt.TXTParser.pullAuthorName(TXTParser.java:71)
+	at com.epam.impl.txt.TXTParserTest.test_valid_domain(TXTParserTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2017-10-03 16:10:57 ERROR txt.TXTParser:64 - No such file:src/main/resources/files
+java.io.FileNotFoundException: src\main\resources\files (Access is denied)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at java.io.FileReader.<init>(FileReader.java:58)
+	at com.epam.impl.txt.TXTParser.returnAuthorName(TXTParser.java:50)
+	at com.epam.impl.txt.TXTParser.pullAuthorName(TXTParser.java:71)
+	at com.epam.impl.txt.TXTParserTest.test_valid_domain(TXTParserTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+2017-10-03 16:20:34 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:20:34 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:20:34 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:21:57 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:21:57 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:21:57 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:21:57 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:21:57 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:21:57 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:21:57 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:21:57 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:21:57 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:21:57 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:21:57 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:21:57 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:25:58 INFO  xml.XMLParserTest:84 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 16:26:04 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:26:04 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:26:04 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:26:04 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:26:04 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:26:04 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:26:04 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:26:04 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:26:04 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:26:04 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:26:04 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:26:04 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:26:56 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:26:56 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:26:56 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:26:56 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:26:56 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:26:56 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:26:56 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:26:56 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:26:56 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:26:56 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:26:56 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:26:56 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:27:47 INFO  xml.XMLParserTest:85 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 16:27:47 INFO  xml.XMLParserTest:85 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 16:27:47 INFO  xml.XMLParserTest:85 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 16:31:10 INFO  json.JSONParserTest:67 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 16:31:10 INFO  json.JSONParserTest:67 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 16:31:10 INFO  json.JSONParserTest:67 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 16:31:47 INFO  json.JSONParserTest:67 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 16:31:47 INFO  json.JSONParserTest:67 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 16:31:47 INFO  json.JSONParserTest:67 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 16:31:47 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:31:47 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:31:47 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:31:47 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:31:47 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:31:47 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:31:47 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:31:48 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:31:48 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:31:48 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:31:48 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:31:48 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:31:48 INFO  xml.XMLParserTest:85 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 16:31:48 INFO  xml.XMLParserTest:85 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 16:31:48 INFO  xml.XMLParserTest:85 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 16:32:49 INFO  json.JSONParserTest:67 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 16:32:49 INFO  json.JSONParserTest:67 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 16:32:49 INFO  json.JSONParserTest:67 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 16:32:49 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:32:49 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:32:49 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:32:49 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:32:49 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:32:49 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:32:49 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:32:49 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:32:49 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:32:49 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:32:49 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:32:49 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:32:50 INFO  xml.XMLParserTest:85 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 16:32:50 INFO  xml.XMLParserTest:85 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 16:32:50 INFO  xml.XMLParserTest:85 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 16:32:58 INFO  json.JSONParserTest:67 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 16:33:05 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:33:05 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:33:05 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:33:05 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:33:23 INFO  xml.XMLParserTest:85 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-03 16:33:34 INFO  json.JSONParserTest:67 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-03 16:33:34 INFO  txt.TXTParserTest:81 - Jonathan Hult
+2017-10-03 16:33:34 INFO  txt.TXTParserTest:87 - Ricky Ho
+2017-10-03 16:33:34 INFO  txt.TXTParserTest:93 - UNKNOWN
+2017-10-03 16:33:34 INFO  txt.TXTParserTest:75 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-03 16:33:34 INFO  xml.XMLParserTest:85 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]

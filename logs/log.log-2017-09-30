@@ -1,0 +1,55 @@
+2017-09-30 10:35:33 INFO  xml.XMLParserTest:51 - [Article{title='The Java Platform module system', author='Sander Mak'}, Article{title='Spring Framework - Overview', author=''}, Article{title='', author='Thorben Janssen'}]
+2017-09-30 10:36:22 INFO  xml.XMLParserTest:51 - [Article{title='The Java Platform module system', author='Sander Mak'}, Article{title='Spring Framework - Overview', author=''}, Article{title='', author='Thorben Janssen'}]
+2017-09-30 10:36:22 INFO  xml.XMLParserTest:70 - Article{title='The Java Platform module system', author='Sander Mak'}
+2017-09-30 10:44:37 INFO  xml.XMLParserTest:51 - [Article{title='The Java Platform module system', author='Sander Mak'}, Article{title='Spring Framework - Overview', author=''}, Article{title='', author='Thorben Janssen'}]
+2017-09-30 10:45:13 INFO  json.JSONParserTest:31 - [Article{title='What are the most exciting features that are expected to be released in Java 9', author='Alex Zhitnitsky'}, Article{title='Dependency Injection and Inversion of Control', author='UNKNOWN'}, Article{title='Hibernate ORM 5.2.11.Final User Guide: Introduction', author='UNKNOWN'}]
+2017-09-30 10:52:55 INFO  xml.XMLParserTest:51 - [Article{title='The Java Platform module system', author='Sander Mak'}, Article{title='Spring Framework - Overview', author=''}, Article{title='', author='Thorben Janssen'}]
+2017-09-30 10:53:03 INFO  json.JSONParserTest:31 - [Article{title='What are the most exciting features that are expected to be released in Java 9', author='Alex Zhitnitsky'}, Article{title='Dependency Injection and Inversion of Control', author='UNKNOWN'}, Article{title='Hibernate ORM 5.2.11.Final User Guide: Introduction', author='UNKNOWN'}]
+2017-09-30 10:56:39 INFO  json.JSONParserTest:31 - [Article{title='What are the most exciting features that are expected to be released in Java 9', author='Alex Zhitnitsky'}, Article{title='Dependency Injection and Inversion of Control', author='UNKNOWN'}, Article{title='Hibernate ORM 5.2.11.Final User Guide: Introduction', author='UNKNOWN'}]
+2017-09-30 10:56:39 INFO  txt.TXTParserTest:28 - [Article{title='﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE', author='Jonathan Hult'}, Article{title='Notes on Oracle Coherence.', author='fast & easy'}]
+2017-09-30 10:56:39 INFO  xml.XMLParserTest:51 - [Article{title='The Java Platform module system', author='Sander Mak'}, Article{title='Spring Framework - Overview', author=''}, Article{title='', author='Thorben Janssen'}]
+2017-09-30 18:27:11 INFO  xml.XMLParserTest:51 - [Article{title='The Java Platform module system', author='Sander Mak'}, Article{title='Spring Framework - Overview', author=''}, Article{title='', author='Thorben Janssen'}]
+2017-09-30 18:33:57 ERROR json.JSONParser:43 - Exception while parsing
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: src\main\resources\files\Article1.json; line: 3, column: 6]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1702)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:558)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:456)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipComment(UTF8StreamJsonParser.java:3102)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd2(UTF8StreamJsonParser.java:2982)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipWSOrEnd(UTF8StreamJsonParser.java:2958)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextFieldName(UTF8StreamJsonParser.java:1012)
+	at com.fasterxml.jackson.databind.deser.std.BaseNodeDeserializer.deserializeObject(JsonNodeDeserializer.java:210)
+	at com.fasterxml.jackson.databind.deser.std.BaseNodeDeserializer.deserializeObject(JsonNodeDeserializer.java:229)
+	at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:69)
+	at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:15)
+	at com.fasterxml.jackson.databind.ObjectMapper._readValue(ObjectMapper.java:3761)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:2198)
+	at com.epam.deserializer.CustomDeserializer.deserialize(CustomDeserializer.java:20)
+	at com.epam.deserializer.CustomDeserializer.deserialize(CustomDeserializer.java:12)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3789)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2731)
+	at com.epam.impl.json.JSONParser.parse(JSONParser.java:38)
+	at com.epam.impl.AbstractParser.getArticles(AbstractParser.java:47)
+	at com.epam.client.Main.main(Main.java:27)
+2017-09-30 19:33:45 ERROR xml.XMLParser:36 - Exception while parsing
+java.io.IOException: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at [row,col {unknown-source}]: [1,1120]
+	at com.fasterxml.jackson.dataformat.xml.util.StaxUtil.throwXmlAsIOException(StaxUtil.java:24)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:559)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory.createParser(XmlFactory.java:431)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2833)
+	at com.epam.impl.xml.XMLParser.parse(XMLParser.java:33)
+	at com.epam.impl.AbstractParser.getArticles(AbstractParser.java:47)
+	at com.epam.client.Main.main(Main.java:23)
+Caused by: com.ctc.wstx.exc.WstxEOFException: Unexpected EOF in prolog
+ at [row,col {unknown-source}]: [1,1120]
+	at com.ctc.wstx.sr.StreamScanner.throwUnexpectedEOF(StreamScanner.java:689)
+	at com.ctc.wstx.sr.BasicStreamReader.handleEOF(BasicStreamReader.java:2213)
+	at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2119)
+	at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1173)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._initializeXmlReader(XmlFactory.java:650)
+	at com.fasterxml.jackson.dataformat.xml.XmlFactory._createParser(XmlFactory.java:557)
+	... 5 more
+2017-09-30 19:50:06 INFO  xml.XMLParserTest:51 - [Article{title='The Java Platform module system', author='Sander Mak'}, Article{title='Spring Framework - Overview', author='UNKNOWN'}, Article{title='UNKNOWN', author='Thorben Janssen'}]
+2017-09-30 19:51:28 INFO  xml.XMLParserTest:51 - [Article{title='The Java Platform module system', author='Sander Mak'}, Article{title='Spring Framework - Overview', author='UNKNOWN'}, Article{title='UNKNOWN', author='Thorben Janssen'}]

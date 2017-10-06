@@ -1,0 +1,70 @@
+2017-10-02 09:52:03 INFO  txt.TXTParserTest:47 - Jonathan Hult
+2017-10-02 09:52:03 INFO  txt.TXTParserTest:49 - Ricky Ho
+2017-10-02 09:52:03 INFO  txt.TXTParserTest:51 - UNKNOWN
+2017-10-02 09:52:03 INFO  txt.TXTParserTest:41 - [Article{title='﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE', author='Jonathan Hult'}, Article{title='Notes on Oracle Coherence.', author='Ricky Ho'}, Article{title='TEST ARTICLE.', author='UNKNOWN'}]
+2017-10-02 09:53:49 INFO  txt.TXTParserTest:47 - Jonathan Hult
+2017-10-02 09:53:49 INFO  txt.TXTParserTest:49 - Ricky Ho
+2017-10-02 09:53:49 INFO  txt.TXTParserTest:51 - UNKNOWN
+2017-10-02 09:54:55 INFO  txt.TXTParserTest:47 - Jonathan Hult
+2017-10-02 09:54:55 INFO  txt.TXTParserTest:49 - Ricky Ho
+2017-10-02 09:54:55 INFO  txt.TXTParserTest:51 - UNKNOWN
+2017-10-02 09:54:55 INFO  txt.TXTParserTest:41 - [Article{title='﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE', author='Jonathan Hult'}, Article{title='Notes on Oracle Coherence.', author='Ricky Ho'}, Article{title='TEST ARTICLE.', author='UNKNOWN'}]
+2017-10-02 10:10:45 INFO  json.JSONParserTest:31 - [[Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9], [Author:  ; Title: Dependency Injection and Inversion of Control], [Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]]
+2017-10-02 11:45:29 INFO  json.JSONParserTest:31 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 11:45:37 INFO  txt.TXTParserTest:47 - Jonathan Hult
+2017-10-02 11:45:37 INFO  txt.TXTParserTest:49 - Ricky Ho
+2017-10-02 11:45:37 INFO  txt.TXTParserTest:51 - UNKNOWN
+2017-10-02 11:45:37 INFO  txt.TXTParserTest:41 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-02 11:45:44 INFO  xml.XMLParserTest:51 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-02 12:11:43 INFO  json.JSONParserTest:31 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 12:12:04 INFO  txt.TXTParserTest:47 - Jonathan Hult
+2017-10-02 12:12:04 INFO  txt.TXTParserTest:49 - Ricky Ho
+2017-10-02 12:12:04 INFO  txt.TXTParserTest:51 - UNKNOWN
+2017-10-02 12:12:04 INFO  txt.TXTParserTest:41 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-02 12:12:18 INFO  xml.XMLParserTest:51 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-02 12:55:23 INFO  json.JSONParserTest:34 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 12:55:28 INFO  json.JSONParserTest:40 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 12:55:47 INFO  json.JSONParserTest:40 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 12:55:58 INFO  json.JSONParserTest:40 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 12:56:14 INFO  json.JSONParserTest:40 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 12:56:29 INFO  json.JSONParserTest:40 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 12:56:48 INFO  json.JSONParserTest:40 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 12:57:15 INFO  json.JSONParserTest:40 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 12:58:43 INFO  json.JSONParserTest:34 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 12:59:31 INFO  json.JSONParserTest:34 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 12:59:43 INFO  txt.TXTParserTest:47 - Jonathan Hult
+2017-10-02 12:59:43 INFO  txt.TXTParserTest:49 - Ricky Ho
+2017-10-02 12:59:43 INFO  txt.TXTParserTest:51 - UNKNOWN
+2017-10-02 12:59:43 INFO  txt.TXTParserTest:41 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-02 13:02:13 INFO  txt.TXTParserTest:49 - Jonathan Hult
+2017-10-02 13:02:13 INFO  txt.TXTParserTest:51 - Ricky Ho
+2017-10-02 13:02:13 INFO  txt.TXTParserTest:53 - UNKNOWN
+2017-10-02 13:02:13 INFO  txt.TXTParserTest:43 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-02 13:03:21 INFO  txt.TXTParserTest:49 - Jonathan Hult
+2017-10-02 13:03:21 INFO  txt.TXTParserTest:51 - Ricky Ho
+2017-10-02 13:03:21 INFO  txt.TXTParserTest:53 - UNKNOWN
+2017-10-02 13:03:21 INFO  txt.TXTParserTest:43 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-02 13:04:17 INFO  txt.TXTParserTest:51 - Jonathan Hult
+2017-10-02 13:04:17 INFO  txt.TXTParserTest:53 - Ricky Ho
+2017-10-02 13:04:17 INFO  txt.TXTParserTest:55 - UNKNOWN
+2017-10-02 13:04:17 INFO  txt.TXTParserTest:45 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-02 13:05:22 INFO  xml.XMLParserTest:54 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-02 13:10:17 INFO  json.JSONParserTest:34 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 13:10:17 INFO  txt.TXTParserTest:51 - Jonathan Hult
+2017-10-02 13:10:17 INFO  txt.TXTParserTest:53 - Ricky Ho
+2017-10-02 13:10:17 INFO  txt.TXTParserTest:55 - UNKNOWN
+2017-10-02 13:10:17 INFO  txt.TXTParserTest:45 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-02 13:10:17 INFO  xml.XMLParserTest:54 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-02 13:23:19 INFO  xml.XMLParserTest:54 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-02 13:23:28 INFO  json.JSONParserTest:33 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 13:23:38 INFO  txt.TXTParserTest:51 - Jonathan Hult
+2017-10-02 13:23:38 INFO  txt.TXTParserTest:53 - Ricky Ho
+2017-10-02 13:23:38 INFO  txt.TXTParserTest:55 - UNKNOWN
+2017-10-02 13:23:38 INFO  txt.TXTParserTest:45 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-02 15:57:02 INFO  xml.XMLParserTest:54 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
+2017-10-02 17:27:31 INFO  json.JSONParserTest:33 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author:  ; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-02 17:27:41 INFO  txt.TXTParserTest:51 - Jonathan Hult
+2017-10-02 17:27:41 INFO  txt.TXTParserTest:53 - Ricky Ho
+2017-10-02 17:27:41 INFO  txt.TXTParserTest:55 - UNKNOWN
+2017-10-02 17:27:41 INFO  txt.TXTParserTest:45 - [Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: TEST ARTICLE.]
+2017-10-02 17:27:51 INFO  xml.XMLParserTest:54 - [Author: Sander Mak; Title: The Java Platform module system, Author: UNKNOWN; Title: Spring Framework - Overview, Author: Thorben Janssen; Title: UNKNOWN]
