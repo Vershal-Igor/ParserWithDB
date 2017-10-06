@@ -9,10 +9,12 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
+
 import java.util.List;
 
 
 public class ArticleDAOImpl implements ArticleDAO {
+
 
     private SessionFactory sessionFactory;
 
@@ -22,7 +24,12 @@ public class ArticleDAOImpl implements ArticleDAO {
 
     @Override
     public List<Article> findAll() throws DAOException {
-        return null;
+        Session session = sessionFactory.openSession();
+        Transaction tx = session.beginTransaction();
+        List<Article> list = session.createQuery("from Article a ").list();
+        session.flush();
+        tx.commit();
+        return list;
     }
 
     @Override
@@ -44,6 +51,7 @@ public class ArticleDAOImpl implements ArticleDAO {
     public void update(Article entity) throws DAOException {
 
     }
+
 
     @Override
     public void loadArticles(List<Article> articles) throws DAOException, ParserException {
