@@ -1,10 +1,10 @@
-package com.epam.impl;
+package com.epam.parser.impl;
 
-import com.epam.Loader;
-import com.epam.Parser;
+
 import com.epam.entity.Article;
-import com.epam.exception.ParserException;
-
+import com.epam.parser.Loader;
+import com.epam.parser.Parser;
+import com.epam.parser.exception.ParserException;
 
 import java.util.ArrayList;
 import java.util.List;

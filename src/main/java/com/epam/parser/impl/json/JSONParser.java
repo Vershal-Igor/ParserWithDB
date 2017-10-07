@@ -1,11 +1,12 @@
-package com.epam.impl.json;
+package com.epam.parser.impl.json;
 
 
-import com.epam.Loader;
-import com.epam.deserializer.CustomDeserializer;
+import com.epam.parser.Loader;
+import com.epam.parser.deserializer.CustomDeserializer;
 import com.epam.entity.Article;
-import com.epam.exception.ParserException;
-import com.epam.impl.AbstractParser;
+
+import com.epam.parser.exception.ParserException;
+import com.epam.parser.impl.AbstractParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
 import org.apache.log4j.Logger;
@@ -45,4 +46,5 @@ public class JSONParser extends AbstractParser {
     }
 
 }
+
 

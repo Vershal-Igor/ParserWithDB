@@ -1,4 +1,4 @@
-package com.epam.deserializer;
+package com.epam.parser.deserializer;
 
 import com.epam.entity.Article;
 import com.fasterxml.jackson.core.JsonParser;

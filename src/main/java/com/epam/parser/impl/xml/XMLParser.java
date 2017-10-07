@@ -1,17 +1,15 @@
-package com.epam.impl.xml;
+package com.epam.parser.impl.xml;
 
-
-import com.epam.Loader;
 import com.epam.entity.Article;
-import com.epam.exception.ParserException;
-import com.epam.impl.AbstractParser;
+import com.epam.parser.Loader;
+import com.epam.parser.exception.ParserException;
+import com.epam.parser.impl.AbstractParser;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.apache.log4j.Logger;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class XMLParser extends AbstractParser {
     private static final Logger logger = Logger.getLogger(XMLParser.class);

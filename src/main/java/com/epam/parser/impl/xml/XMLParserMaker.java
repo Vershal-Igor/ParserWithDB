@@ -1,8 +1,8 @@
-package com.epam.impl.xml;
+package com.epam.parser.impl.xml;
 
 
-import com.epam.Parser;
-import com.epam.ParserMaker;
+import com.epam.parser.Parser;
+import com.epam.parser.ParserMaker;
 
 
 public class XMLParserMaker implements ParserMaker {

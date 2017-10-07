@@ -1,11 +1,11 @@
-package com.epam.impl.xml;
+package com.epam.parser.impl.xml;
 
-import com.epam.Loader;
-import com.epam.Parser;
-import com.epam.ParserMaker;
-import com.epam.ParserType;
+import com.epam.parser.Loader;
+import com.epam.parser.Parser;
+import com.epam.parser.ParserMaker;
+import com.epam.parser.ParserType;
 import com.epam.entity.Article;
-import com.epam.exception.ParserException;
+import com.epam.parser.exception.ParserException;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.apache.log4j.Logger;
 
@@ -19,9 +19,9 @@ import org.junit.rules.ExpectedException;
 import java.io.*;
 import java.util.List;
 
-import static com.epam.ParserMaker.getParserByName;
-import static com.epam.impl.xml.XMLParser.inputStreamToString;
-import static com.epam.impl.xml.XMLParser.returnArticleWithCorrectValues;
+import static com.epam.parser.ParserMaker.getParserByName;
+import static com.epam.parser.impl.xml.XMLParser.inputStreamToString;
+import static com.epam.parser.impl.xml.XMLParser.returnArticleWithCorrectValues;
 import static org.junit.Assert.*;
 
 public class XMLParserTest {

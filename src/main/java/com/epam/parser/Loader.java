@@ -1,6 +1,7 @@
-package com.epam;
+package com.epam.parser;
 
-import com.epam.exception.ParserException;
+
+import com.epam.parser.exception.ParserException;
 import org.apache.log4j.Logger;
 
 import java.io.IOException;

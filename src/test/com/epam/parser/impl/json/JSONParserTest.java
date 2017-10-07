@@ -1,11 +1,11 @@
-package com.epam.impl.json;
+package com.epam.parser.impl.json;
 
-import com.epam.Loader;
-import com.epam.Parser;
-import com.epam.ParserMaker;
-import com.epam.ParserType;
+import com.epam.parser.Loader;
+import com.epam.parser.Parser;
+import com.epam.parser.ParserMaker;
+import com.epam.parser.ParserType;
 import com.epam.entity.Article;
-import com.epam.exception.ParserException;
+import com.epam.parser.exception.ParserException;
 import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Rule;
@@ -15,7 +15,7 @@ import org.junit.rules.ExpectedException;
 
 import java.util.List;
 
-import static com.epam.ParserMaker.getParserByName;
+import static com.epam.parser.ParserMaker.getParserByName;
 import static org.junit.Assert.*;
 
 public class JSONParserTest {

@@ -1,6 +1,7 @@
 package com.epam;
 
-import com.epam.exception.ParserException;
+import com.epam.parser.Loader;
+import com.epam.parser.exception.ParserException;
 import org.apache.log4j.Logger;
 import org.hamcrest.Matcher;
 import org.junit.Test;

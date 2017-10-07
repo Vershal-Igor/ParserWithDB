@@ -1,9 +1,9 @@
-package com.epam;
+package com.epam.parser;
 
 
-import com.epam.impl.json.JSONParserMaker;
-import com.epam.impl.txt.TXTParserMaker;
-import com.epam.impl.xml.XMLParserMaker;
+import com.epam.parser.impl.json.JSONParserMaker;
+import com.epam.parser.impl.txt.TXTParserMaker;
+import com.epam.parser.impl.xml.XMLParserMaker;
 import org.apache.log4j.Logger;
 
 public interface ParserMaker {

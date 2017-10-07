@@ -1,4 +1,4 @@
-package com.epam.exception;
+package com.epam.parser.exception;
 
 
 public class ParserException extends Exception {
@@ -17,4 +17,5 @@ public class ParserException extends Exception {
         super(cause);
     }
 }
+
 

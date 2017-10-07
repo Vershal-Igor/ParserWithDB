@@ -58,8 +58,8 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:140)
 	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3789)
 	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2833)
-	at com.epam.impl.xml.XMLParser.parse(XMLParser.java:31)
-	at com.epam.impl.AbstractParser.loadArticlesFromDirectory(AbstractParser.java:26)
+	at com.epam.parser.impl.xml.XMLParser.parse(XMLParser.java:31)
+	at com.epam.parser.impl.AbstractParser.loadArticlesFromDirectory(AbstractParser.java:26)
 	at com.epam.client.Main.main(Main.java:24)
 2017-10-06 16:33:32 ERROR xml.XMLParser:34 - Exception while parsing
 com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "contents" (class com.epam.entity.Article), not marked as ignorable (4 known properties: "title", "content", "id", "author"])
@@ -73,8 +73,8 @@ com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized f
 	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:140)
 	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3789)
 	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2833)
-	at com.epam.impl.xml.XMLParser.parse(XMLParser.java:31)
-	at com.epam.impl.AbstractParser.loadArticlesFromDirectory(AbstractParser.java:26)
+	at com.epam.parser.impl.xml.XMLParser.parse(XMLParser.java:31)
+	at com.epam.parser.impl.AbstractParser.loadArticlesFromDirectory(AbstractParser.java:26)
 	at com.epam.client.Main.main(Main.java:24)
 2017-10-06 16:57:34 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
 2017-10-06 16:57:34 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
