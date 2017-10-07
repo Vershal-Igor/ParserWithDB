@@ -11,6 +11,7 @@ import java.util.List;
 
 
 public abstract class AbstractParser implements Parser {
+
     private final String type;
 
     protected AbstractParser(String type) {
@@ -27,6 +28,12 @@ public abstract class AbstractParser implements Parser {
             articleList.addAll(list);
         }
         return articleList;
+    }
+
+    public Article loadArticleFromFile(String file) throws ParserException {
+        List<Article> list = parse(file);
+        Article article = list.get(0);
+        return article;
     }
 
     protected abstract List<Article> parse(String directory) throws ParserException;

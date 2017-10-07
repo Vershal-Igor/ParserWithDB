@@ -2,6 +2,7 @@ package com.epam.client;
 
 
 import com.epam.entity.Article;
+import com.epam.parser.Loader;
 import com.epam.parser.Parser;
 import com.epam.parser.ParserMaker;
 
@@ -10,10 +11,8 @@ import com.epam.parser.ParserType;
 import com.epam.parser.exception.ParserException;
 import com.epam.service.exception.ServiceException;
 import com.epam.service.impl.ArticleServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.stereotype.Component;
 
 
 import java.util.List;
@@ -35,7 +34,6 @@ public class Main {
         Parser XMLparser = XMLmaker.createParser();
         List<Article> XMLarticles = XMLparser.loadArticlesFromDirectory(DIRECTORY);
 
-
         ParserMaker JSONmaker = getParserByName(ParserType.JSON);
         Parser JSONParser = JSONmaker.createParser();
         List<Article> JSONarticles = JSONParser.loadArticlesFromDirectory(DIRECTORY);
@@ -49,10 +47,13 @@ public class Main {
 
         articleService.deleteAll();
 
-
         articleService.loadArticles(XMLarticles);
         articleService.loadArticles(JSONarticles);
         articleService.loadArticles(TXTarticles);
+
+        articleService.loadArticle(XMLparser.loadArticleFromFile(Loader.getXmlArticle2()));
+
+        System.out.println(articleService.findByTitle("Notes on Oracle Coherence."));
 
     }
 }

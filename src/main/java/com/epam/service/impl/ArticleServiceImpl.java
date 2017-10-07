@@ -13,6 +13,7 @@ import java.util.List;
 public class ArticleServiceImpl implements ArticleService {
     private static final Logger logger = Logger.getLogger(ArticleServiceImpl.class);
     private ArticleDAOImpl articleDAO;
+    private static final int ZERO_RECORDS_COUNT = 0;
 
     @Override
     public List<Article> findAll() throws ServiceException {
@@ -68,11 +69,28 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public void loadArticle(Article article) throws ServiceException {
         try {
-            articleDAO.loadArticle(article);
+            int recordCount = articleDAO.checkArticle(article);
+            if (recordCount == ZERO_RECORDS_COUNT) {
+                articleDAO.loadArticle(article);
+            } else {
+                logger.info("\"" + article.getTitle() + "\"" + " Article is already in the database");
+            }
         } catch (DAOException e) {
             logger.error("error while load article", e);
             throw new ServiceException("error while load article", e);
         }
+    }
+
+    @Override
+    public Article findByTitle(String title) throws ServiceException {
+        Article article = null;
+        try {
+            article = articleDAO.findByTitle(title);
+        } catch (DAOException e) {
+            logger.error("error while find by title", e);
+            throw new ServiceException("error while find by title", e);
+        }
+        return article;
     }
 
     public void setArticleDAO(ArticleDAOImpl articleDAO) {

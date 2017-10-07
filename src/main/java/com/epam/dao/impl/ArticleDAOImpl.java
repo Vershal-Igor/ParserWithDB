@@ -4,9 +4,11 @@ package com.epam.dao.impl;
 import com.epam.dao.ArticleDAO;
 import com.epam.dao.exception.DAOException;
 import com.epam.entity.Article;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+
 
 
 import java.util.List;
@@ -35,6 +37,17 @@ public class ArticleDAOImpl implements ArticleDAO {
     @Override
     public Article findById(Long id) throws DAOException {
         return null;
+    }
+
+    @Override
+    public Article findByTitle(String title) throws DAOException {
+        Session session = sessionFactory.openSession();
+        Transaction tx = session.beginTransaction();
+        Article article = (Article) session.get(Article.class, title);
+        session.flush();
+        tx.commit();
+        session.close();
+        return article;
     }
 
     @Override
@@ -88,6 +101,23 @@ public class ArticleDAOImpl implements ArticleDAO {
         session.flush();
         tx.commit();
         session.close();
+    }
+
+    @Override
+    public int checkArticle(Article article) throws DAOException {
+        Session session = sessionFactory.openSession();
+        Transaction tx = session.beginTransaction();
+        Query query = session.createQuery("select exists (from Article where title =:title and author = :author)from Article ");
+        query.setParameter("title", article.getTitle());
+        query.setParameter("author", article.getAuthor());
+        List<Article> articles = query.list();
+        if (articles == null){
+            return 0;
+        }
+        session.flush();
+        tx.commit();
+        session.close();
+        return 1;
     }
 
     public void setSessionFactory(SessionFactory sessionFactory) {
