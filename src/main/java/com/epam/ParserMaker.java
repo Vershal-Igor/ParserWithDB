@@ -22,7 +22,7 @@ public interface ParserMaker {
                 return new TXTParserMaker();
             default:
                 logger.error(EXCEPTION + type);
-                throw new RuntimeException(EXCEPTION + type);
+                throw new IllegalArgumentException(EXCEPTION + type);
         }
     }
 }

@@ -1,0 +1,332 @@
+2017-10-06 15:56:46 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 15:56:46 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 15:56:46 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 15:56:46 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 15:56:46 INFO  cfg.Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-06 15:56:46 INFO  cfg.Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-06 15:57:26 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 15:57:26 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 15:57:26 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 15:57:26 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 15:57:26 INFO  cfg.Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-06 15:57:26 INFO  cfg.Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-06 15:57:26 INFO  cfg.Configuration:2216 - HHH000041: Configured SessionFactory: null
+2017-10-06 15:57:26 WARN  internal.DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-06 15:57:26 INFO  internal.DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/articles]
+2017-10-06 15:57:26 INFO  internal.DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {}
+2017-10-06 15:57:26 INFO  internal.DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2017-10-06 15:57:26 INFO  internal.DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-06 15:58:35 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 15:58:35 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 15:58:35 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 15:58:35 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 15:58:35 INFO  cfg.Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-06 15:58:35 INFO  cfg.Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-06 15:58:35 INFO  cfg.Configuration:2216 - HHH000041: Configured SessionFactory: null
+2017-10-06 15:58:35 WARN  internal.DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-06 15:58:35 INFO  internal.DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/articles]
+2017-10-06 15:58:35 INFO  internal.DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2017-10-06 15:58:35 INFO  internal.DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2017-10-06 15:58:35 INFO  internal.DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-06 15:58:36 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-06 15:58:36 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 15:58:36 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 16:02:44 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 16:02:44 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 16:02:44 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 16:02:44 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 16:02:44 INFO  cfg.Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-06 16:02:44 INFO  cfg.Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-06 16:02:44 INFO  cfg.Configuration:2216 - HHH000041: Configured SessionFactory: null
+2017-10-06 16:02:44 WARN  internal.DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-06 16:02:44 INFO  internal.DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/articles]
+2017-10-06 16:02:44 INFO  internal.DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2017-10-06 16:02:44 INFO  internal.DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2017-10-06 16:02:44 INFO  internal.DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-06 16:02:45 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-06 16:02:46 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 16:02:46 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 16:32:57 ERROR xml.XMLParser:34 - Exception while parsing
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "contents" (class com.epam.entity.Article), not marked as ignorable (4 known properties: "title", "content", "id", "author"])
+ at [Source: java.io.StringReader@768b970c; line: 1, column: 1104] (through reference chain: com.epam.entity.Article["contents"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:62)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:834)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1096)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1469)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1447)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:282)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:140)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3789)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2833)
+	at com.epam.impl.xml.XMLParser.parse(XMLParser.java:31)
+	at com.epam.impl.AbstractParser.loadArticlesFromDirectory(AbstractParser.java:26)
+	at com.epam.client.Main.main(Main.java:24)
+2017-10-06 16:33:32 ERROR xml.XMLParser:34 - Exception while parsing
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "contents" (class com.epam.entity.Article), not marked as ignorable (4 known properties: "title", "content", "id", "author"])
+ at [Source: java.io.StringReader@768b970c; line: 1, column: 1104] (through reference chain: com.epam.entity.Article["contents"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:62)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:834)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1096)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1469)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1447)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:282)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:140)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3789)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2833)
+	at com.epam.impl.xml.XMLParser.parse(XMLParser.java:31)
+	at com.epam.impl.AbstractParser.loadArticlesFromDirectory(AbstractParser.java:26)
+	at com.epam.client.Main.main(Main.java:24)
+2017-10-06 16:57:34 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 16:57:34 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 16:57:34 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 16:57:34 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 16:57:34 INFO  cfg.Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-06 16:57:34 INFO  cfg.Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-06 16:57:35 INFO  cfg.Configuration:2216 - HHH000041: Configured SessionFactory: null
+2017-10-06 16:57:35 WARN  internal.DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-06 16:57:35 INFO  internal.DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/articles]
+2017-10-06 16:57:35 INFO  internal.DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2017-10-06 16:57:35 INFO  internal.DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2017-10-06 16:57:35 INFO  internal.DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-06 16:57:36 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-06 16:57:36 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 16:57:36 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 16:57:38 WARN  spi.SqlExceptionHelper:144 - SQL Error: 1054, SQLState: 42S22
+2017-10-06 16:57:38 ERROR spi.SqlExceptionHelper:146 - Unknown column 'article0_.contents' in 'field list'
+2017-10-06 16:57:38 WARN  spi.SqlExceptionHelper:232 - SQL Warning Code: 1054, SQLState: 42S22
+2017-10-06 16:57:38 WARN  spi.SqlExceptionHelper:233 - Unknown column 'article0_.contents' in 'field list'
+2017-10-06 17:05:12 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 17:05:12 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 17:05:12 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 17:05:12 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 17:05:12 INFO  cfg.Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-06 17:05:12 INFO  cfg.Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-06 17:05:12 INFO  cfg.Configuration:2216 - HHH000041: Configured SessionFactory: null
+2017-10-06 17:05:13 WARN  internal.DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-06 17:05:13 INFO  internal.DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/articles]
+2017-10-06 17:05:13 INFO  internal.DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2017-10-06 17:05:13 INFO  internal.DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2017-10-06 17:05:13 INFO  internal.DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-06 17:05:13 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-06 17:05:14 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 17:05:14 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 17:10:39 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 17:10:39 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 17:10:39 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 17:10:39 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 17:10:39 INFO  cfg.Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-06 17:10:39 INFO  cfg.Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-06 17:10:39 INFO  cfg.Configuration:2216 - HHH000041: Configured SessionFactory: null
+2017-10-06 17:10:40 WARN  internal.DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-06 17:10:40 INFO  internal.DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/articles]
+2017-10-06 17:10:40 INFO  internal.DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {}
+2017-10-06 17:10:40 INFO  internal.DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2017-10-06 17:10:40 INFO  internal.DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-06 17:10:53 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 17:10:53 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 17:10:53 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 17:10:53 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 17:10:53 INFO  cfg.Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-06 17:10:53 INFO  cfg.Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-06 17:10:53 INFO  cfg.Configuration:2216 - HHH000041: Configured SessionFactory: null
+2017-10-06 17:10:53 WARN  internal.DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-06 17:10:53 INFO  internal.DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/articles]
+2017-10-06 17:10:53 INFO  internal.DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2017-10-06 17:10:53 INFO  internal.DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2017-10-06 17:10:53 INFO  internal.DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-06 17:10:54 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-06 17:10:55 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 17:10:55 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 17:12:36 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 17:12:36 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 17:12:36 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 17:12:36 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 17:12:36 INFO  cfg.Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-06 17:12:36 INFO  cfg.Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-06 17:12:36 INFO  cfg.Configuration:2216 - HHH000041: Configured SessionFactory: null
+2017-10-06 17:12:36 WARN  internal.DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-06 17:12:36 INFO  internal.DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/articles]
+2017-10-06 17:12:36 INFO  internal.DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2017-10-06 17:12:36 INFO  internal.DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2017-10-06 17:12:36 INFO  internal.DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-06 17:12:37 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-06 17:12:38 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 17:12:38 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 17:12:49 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 17:12:49 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 17:12:49 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 17:12:49 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 17:12:49 INFO  cfg.Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-06 17:12:49 INFO  cfg.Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-06 17:12:50 INFO  cfg.Configuration:2216 - HHH000041: Configured SessionFactory: null
+2017-10-06 17:12:50 WARN  internal.DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-06 17:12:50 INFO  internal.DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/articles]
+2017-10-06 17:12:50 INFO  internal.DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2017-10-06 17:12:50 INFO  internal.DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2017-10-06 17:12:50 INFO  internal.DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-06 17:12:51 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-06 17:12:51 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 17:12:51 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 17:30:45 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 17:30:45 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 17:30:45 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 17:30:45 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 17:30:45 INFO  cfg.Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-06 17:30:45 INFO  cfg.Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-06 17:30:45 INFO  cfg.Configuration:2216 - HHH000041: Configured SessionFactory: null
+2017-10-06 17:30:45 WARN  internal.DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-06 17:30:45 INFO  internal.DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/articles]
+2017-10-06 17:30:45 INFO  internal.DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2017-10-06 17:30:45 INFO  internal.DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2017-10-06 17:30:45 INFO  internal.DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-06 17:30:46 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-06 17:30:47 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 17:30:47 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 17:32:21 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 17:32:21 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 17:32:21 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 17:32:21 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 17:32:21 INFO  cfg.Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-06 17:32:21 INFO  cfg.Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-06 17:32:21 INFO  cfg.Configuration:2216 - HHH000041: Configured SessionFactory: null
+2017-10-06 17:32:21 WARN  internal.DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-06 17:32:21 INFO  internal.DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/articles]
+2017-10-06 17:32:21 INFO  internal.DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2017-10-06 17:32:21 INFO  internal.DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2017-10-06 17:32:21 INFO  internal.DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-06 17:32:22 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-06 17:32:23 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 17:32:23 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 17:38:24 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 17:38:24 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 17:38:24 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 17:38:24 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 17:38:24 INFO  cfg.Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-06 17:38:24 INFO  cfg.Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-06 17:38:24 INFO  cfg.Configuration:2216 - HHH000041: Configured SessionFactory: null
+2017-10-06 17:38:24 WARN  internal.DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-06 17:38:24 INFO  internal.DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/articles]
+2017-10-06 17:38:24 INFO  internal.DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2017-10-06 17:38:24 INFO  internal.DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2017-10-06 17:38:24 INFO  internal.DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-06 17:38:26 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-06 17:38:26 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 17:38:26 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 18:08:20 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 18:08:20 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 18:08:20 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 18:08:20 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 18:08:20 INFO  cfg.Configuration:2075 - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-10-06 18:08:20 INFO  cfg.Configuration:2094 - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-10-06 18:08:20 INFO  cfg.Configuration:2216 - HHH000041: Configured SessionFactory: null
+2017-10-06 18:08:20 WARN  internal.DriverManagerConnectionProviderImpl:93 - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-10-06 18:08:20 INFO  internal.DriverManagerConnectionProviderImpl:166 - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/articles]
+2017-10-06 18:08:20 INFO  internal.DriverManagerConnectionProviderImpl:175 - HHH000046: Connection properties: {user=root, password=****}
+2017-10-06 18:08:20 INFO  internal.DriverManagerConnectionProviderImpl:180 - HHH000006: Autocommit mode: false
+2017-10-06 18:08:20 INFO  internal.DriverManagerConnectionProviderImpl:102 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-06 18:08:21 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-10-06 18:08:21 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 18:08:21 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 19:39:52 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@762efe5d: startup date [Fri Oct 06 19:39:52 MSK 2017]; root of context hierarchy
+2017-10-06 19:39:53 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [servlet-config.xml]
+2017-10-06 19:40:13 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@762efe5d: startup date [Fri Oct 06 19:40:13 MSK 2017]; root of context hierarchy
+2017-10-06 19:40:13 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config.xml]
+2017-10-06 19:40:15 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.properties]
+2017-10-06 19:40:15 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 19:40:15 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 19:40:15 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 19:40:15 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 19:40:16 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-06 19:40:16 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 19:40:16 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 19:40:17 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@2e61d218] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-06 23:13:19 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Fri Oct 06 23:13:19 MSK 2017]; root of context hierarchy
+2017-10-06 23:13:19 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config.xml]
+2017-10-06 23:13:20 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.properties]
+2017-10-06 23:13:22 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 23:13:22 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 23:13:22 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 23:13:22 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 23:13:24 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-06 23:13:24 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 23:13:24 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 23:13:26 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@377008df] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-06 23:17:05 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Fri Oct 06 23:17:05 MSK 2017]; root of context hierarchy
+2017-10-06 23:17:05 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config.xml]
+2017-10-06 23:17:06 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.properties]
+2017-10-06 23:17:07 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 23:17:07 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 23:17:07 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 23:17:07 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 23:17:09 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-06 23:17:10 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 23:17:10 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 23:17:10 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@6691490c] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-06 23:21:22 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Fri Oct 06 23:21:22 MSK 2017]; root of context hierarchy
+2017-10-06 23:21:23 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config.xml]
+2017-10-06 23:21:48 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Fri Oct 06 23:21:48 MSK 2017]; root of context hierarchy
+2017-10-06 23:21:48 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config.xml]
+2017-10-06 23:21:49 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.properties]
+2017-10-06 23:21:50 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 23:21:50 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 23:21:50 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 23:21:50 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 23:21:51 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-06 23:21:51 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 23:21:51 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 23:21:52 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@393881f0] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-06 23:28:13 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Fri Oct 06 23:28:12 MSK 2017]; root of context hierarchy
+2017-10-06 23:28:13 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config.xml]
+2017-10-06 23:28:13 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.properties]
+2017-10-06 23:28:15 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 23:28:15 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 23:28:15 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 23:28:15 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 23:28:16 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-06 23:28:16 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 23:28:16 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 23:28:17 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@4af46df3] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-06 23:30:19 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@25af5db5: startup date [Fri Oct 06 23:30:19 MSK 2017]; root of context hierarchy
+2017-10-06 23:30:19 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config.xml]
+2017-10-06 23:30:20 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.properties]
+2017-10-06 23:30:21 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 23:30:21 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 23:30:21 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 23:30:21 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 23:30:23 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-06 23:30:23 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 23:30:23 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 23:30:24 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@415156bf] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-06 23:53:29 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@762efe5d: startup date [Fri Oct 06 23:53:29 MSK 2017]; root of context hierarchy
+2017-10-06 23:53:29 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config.xml]
+2017-10-06 23:53:30 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.properties]
+2017-10-06 23:53:30 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 23:53:30 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 23:53:30 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 23:53:30 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 23:53:32 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-06 23:53:32 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 23:53:32 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 23:53:33 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@3569fc08] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-06 23:53:59 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@762efe5d: startup date [Fri Oct 06 23:53:59 MSK 2017]; root of context hierarchy
+2017-10-06 23:53:59 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config.xml]
+2017-10-06 23:54:00 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.properties]
+2017-10-06 23:54:00 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 23:54:00 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 23:54:00 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 23:54:00 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 23:54:02 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-06 23:54:02 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 23:54:02 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 23:54:03 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@3569fc08] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-06 23:58:53 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@762efe5d: startup date [Fri Oct 06 23:58:53 MSK 2017]; root of context hierarchy
+2017-10-06 23:58:53 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config.xml]
+2017-10-06 23:58:54 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.properties]
+2017-10-06 23:58:54 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-06 23:58:54 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-06 23:58:54 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-06 23:58:54 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-06 23:58:56 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-06 23:58:57 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-06 23:58:57 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-06 23:58:58 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@3569fc08] of Hibernate SessionFactory for HibernateTransactionManager

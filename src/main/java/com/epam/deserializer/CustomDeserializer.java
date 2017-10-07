@@ -22,12 +22,13 @@ public class CustomDeserializer extends JsonDeserializer<Article> {
 
         String authorName = getCorrectElement(articleNode.get("author_name"));
 
-        return new Article(title, authorName);
+        String contents = getCorrectElement(articleNode.get("content"));
+        return new Article(title, authorName,contents);
     }
 
     private String getCorrectElement(JsonNode jsonNode) {
         if (jsonNode == null) {
-            return NO_ELEMENT;
+            return DEFAULT_ELEMENT;//return NO_ELEMENT;
         }
         if (jsonNode.asText().isEmpty()) {
             return DEFAULT_ELEMENT;

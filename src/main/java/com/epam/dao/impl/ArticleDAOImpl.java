@@ -4,7 +4,6 @@ package com.epam.dao.impl;
 import com.epam.dao.ArticleDAO;
 import com.epam.dao.exception.DAOException;
 import com.epam.entity.Article;
-import com.epam.exception.ParserException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -29,6 +28,7 @@ public class ArticleDAOImpl implements ArticleDAO {
         List<Article> list = session.createQuery("from Article a ").list();
         session.flush();
         tx.commit();
+        session.close();
         return list;
     }
 
@@ -44,6 +44,23 @@ public class ArticleDAOImpl implements ArticleDAO {
 
     @Override
     public void delete(Long id) throws DAOException {
+        Session session = sessionFactory.openSession();
+        Transaction tx = session.beginTransaction();
+        Article article = (Article) session.get(Article.class, id);
+        session.delete(article);
+        session.flush();
+        tx.commit();
+        session.close();
+
+    }
+
+    public void deleteAll(List<Article> articles) throws DAOException {
+        Session session = sessionFactory.openSession();
+        Transaction tx = session.beginTransaction();
+        articles.forEach(session::delete);
+        session.flush();
+        tx.commit();
+        session.close();
 
     }
 
@@ -54,12 +71,23 @@ public class ArticleDAOImpl implements ArticleDAO {
 
 
     @Override
-    public void loadArticles(List<Article> articles) throws DAOException, ParserException {
+    public void loadArticles(List<Article> articles) throws DAOException {
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
-        session.save(articles);
+        articles.forEach(session::save);
         session.flush();
         tx.commit();
+        session.close();
+    }
+
+    @Override
+    public void loadArticle(Article article) throws DAOException {
+        Session session = sessionFactory.openSession();
+        Transaction tx = session.beginTransaction();
+        session.save(article);
+        session.flush();
+        tx.commit();
+        session.close();
     }
 
     public void setSessionFactory(SessionFactory sessionFactory) {

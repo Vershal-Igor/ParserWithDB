@@ -11,7 +11,7 @@ import org.apache.log4j.Logger;
 import java.util.List;
 
 public class ArticleServiceImpl implements ArticleService {
-    public static Logger logger = Logger.getLogger(ArticleServiceImpl.class);
+    private static final Logger logger = Logger.getLogger(ArticleServiceImpl.class);
     private ArticleDAOImpl articleDAO;
 
     @Override
@@ -41,6 +41,15 @@ public class ArticleServiceImpl implements ArticleService {
 
     }
 
+    public void deleteAll() throws ServiceException {
+        try {
+            articleDAO.deleteAll(articleDAO.findAll());
+        } catch (DAOException e) {
+            logger.error("error while delete all articles", e);
+            throw new ServiceException("error while delete all articles", e);
+        }
+    }
+
     @Override
     public void update(Article entity) throws ServiceException {
 
@@ -48,7 +57,22 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public void loadArticles(List<Article> articles) throws ServiceException {
+        try {
+            articleDAO.loadArticles(articles);
+        } catch (DAOException e) {
+            logger.error("error while load all articles", e);
+            throw new ServiceException("error while load all articles", e);
+        }
+    }
 
+    @Override
+    public void loadArticle(Article article) throws ServiceException {
+        try {
+            articleDAO.loadArticle(article);
+        } catch (DAOException e) {
+            logger.error("error while load article", e);
+            throw new ServiceException("error while load article", e);
+        }
     }
 
     public void setArticleDAO(ArticleDAOImpl articleDAO) {

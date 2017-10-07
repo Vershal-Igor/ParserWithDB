@@ -5,16 +5,12 @@ import com.epam.Parser;
 import com.epam.ParserMaker;
 
 import com.epam.ParserType;
-import com.epam.dao.exception.DAOException;
-import com.epam.dao.impl.ArticleDAOImpl;
+
 import com.epam.exception.ParserException;
 import com.epam.service.exception.ServiceException;
 import com.epam.service.impl.ArticleServiceImpl;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-
-import java.io.IOException;
 
 
 import static com.epam.ParserMaker.getParserByName;
@@ -23,28 +19,34 @@ import static com.epam.ParserMaker.getParserByName;
 public class Main {
     private static final String DIRECTORY = "src/main/resources/files";
 
-    public static void main(String[] args) throws ParserException, DAOException, ServiceException {
+    public static void main(String[] args) throws ParserException, ServiceException {
 
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-config.xml");
-        for(String name: applicationContext.getBeanDefinitionNames())
-            System.out.println(name);
-        ArticleServiceImpl articleService = (ArticleServiceImpl) applicationContext.getBean("articleService");
 
-        System.out.println(articleService.findAll());
+        ArticleServiceImpl articleService = (ArticleServiceImpl) applicationContext.getBean("articleService");
 
         ParserMaker XMLmaker = getParserByName(ParserType.XML);
         Parser XMLparser = XMLmaker.createParser();
-        XMLparser.loadArticlesFromDirectory(DIRECTORY);
-        
+        //XMLparser.loadArticlesFromDirectory(DIRECTORY);
+
 
         ParserMaker JSONmaker = getParserByName(ParserType.JSON);
         Parser JSONParser = JSONmaker.createParser();
-        JSONParser.loadArticlesFromDirectory(DIRECTORY);
+        //JSONParser.loadArticlesFromDirectory(DIRECTORY);
 
 
         ParserMaker TXTmaker = getParserByName(ParserType.TXT);
         Parser TXTParser = TXTmaker.createParser();
-        TXTParser.loadArticlesFromDirectory(DIRECTORY);
+        //TXTParser.loadArticlesFromDirectory(DIRECTORY);
+
+        //System.out.println(articleService.findAll());
+
+        articleService.deleteAll();
+
+
+        articleService.loadArticles(XMLparser.loadArticlesFromDirectory(DIRECTORY));
+        articleService.loadArticles(JSONParser.loadArticlesFromDirectory(DIRECTORY));
+        articleService.loadArticles(TXTParser.loadArticlesFromDirectory(DIRECTORY));
 
     }
 }

@@ -10,11 +10,11 @@ public interface GenericDAO<E, K> {
 
     List<E> findAll() throws DAOException;
 
-    E findById(Long id) throws DAOException;
+    E findById(K id) throws DAOException;
 
     Long add(E entity) throws DAOException;
 
-    void delete(Long id) throws DAOException;
+    void delete(K id) throws DAOException;
 
     void update(E entity) throws DAOException;
 }
