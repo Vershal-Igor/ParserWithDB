@@ -1,45 +1,41 @@
-
 package config;
 
+import static com.epam.parser.ParserMaker.getParserByName;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+import java.io.IOException;
+import java.util.List;
+import java.util.Properties;
+
+import com.epam.dao.impl.ArticleDAOImpl;
+import com.epam.entity.Article;
+import com.epam.parser.Loader;
+import com.epam.parser.Parser;
+import com.epam.parser.ParserMaker;
+import com.epam.parser.ParserType;
+import org.apache.log4j.Logger;
 import org.dbunit.DBTestCase;
 import org.dbunit.IDatabaseTester;
 import org.dbunit.JdbcDatabaseTester;
 import org.dbunit.PropertiesBasedJdbcDatabaseTester;
 import org.dbunit.dataset.IDataSet;
+import org.dbunit.dataset.xml.FlatXmlDataSetBuilder;
 import org.dbunit.operation.DatabaseOperation;
+import org.junit.Assert;
 import org.junit.Before;
-import org.springframework.transaction.annotation.Transactional;
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import java.io.IOException;
-import java.util.Properties;
+import javax.transaction.Transactional;
+
 
 public class DBUnitConfig extends DBTestCase {
+    private static final Logger logger = Logger.getLogger(DBUnitConfig.class);
     protected IDatabaseTester tester; //Объект с помощью которого идёт сравнение табличек;
     private Properties prop; // Настройки подключения;
     protected IDataSet beforeData; // Данные для инициализации БД перд выполнением тестов;
 
-    @Before
-    public void setUp() throws Exception {
-        tester = new JdbcDatabaseTester(prop.getProperty("db.driver"),
-                prop.getProperty("db.url"),
-                prop.getProperty("db.username"),
-                prop.getProperty("db.password"));
-    }
-
-    public DBUnitConfig(String name) {
-        super(name);
-        prop = new Properties();
-        try {
-            prop.load(Thread.currentThread().getContextClassLoader().getResourceAsStream("db/db.test.properties"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        System.setProperty(PropertiesBasedJdbcDatabaseTester.DBUNIT_DRIVER_CLASS, prop.getProperty("db.driver"));
-        System.setProperty(PropertiesBasedJdbcDatabaseTester.DBUNIT_CONNECTION_URL, prop.getProperty("db.url"));
-        System.setProperty(PropertiesBasedJdbcDatabaseTester.DBUNIT_USERNAME, prop.getProperty("db.username"));
-        System.setProperty(PropertiesBasedJdbcDatabaseTester.DBUNIT_PASSWORD, prop.getProperty("db.password"));
-        System.setProperty(PropertiesBasedJdbcDatabaseTester.DBUNIT_SCHEMA, "");
-    }
 
     @Transactional
     @Override
@@ -53,4 +49,56 @@ public class DBUnitConfig extends DBTestCase {
         return DatabaseOperation.NONE;
     }
 
+    @Override
+    protected DatabaseOperation getSetUpOperation() throws Exception {
+        return DatabaseOperation.REFRESH;
+    }
+
+    @Before
+    public void setUp() throws Exception {
+        tester = new JdbcDatabaseTester(prop.getProperty("jdbc.driverClassName"),
+                prop.getProperty("jdbc.url"),
+                prop.getProperty("jdbc.username"),
+                prop.getProperty("jdbc.password"));
+    }
+
+    public DBUnitConfig(String name) {
+        super(name);
+        prop = new Properties();
+        try {
+            prop.load(Thread.currentThread().getContextClassLoader().getResourceAsStream("db/db.test.properties"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.setProperty(PropertiesBasedJdbcDatabaseTester.DBUNIT_DRIVER_CLASS, prop.getProperty("jdbc.driverClassName"));
+        System.setProperty(PropertiesBasedJdbcDatabaseTester.DBUNIT_CONNECTION_URL, prop.getProperty("jdbc.url"));
+        System.setProperty(PropertiesBasedJdbcDatabaseTester.DBUNIT_USERNAME, prop.getProperty("jdbc.username"));
+        System.setProperty(PropertiesBasedJdbcDatabaseTester.DBUNIT_PASSWORD, prop.getProperty("jdbc.password"));
+        System.setProperty(PropertiesBasedJdbcDatabaseTester.DBUNIT_SCHEMA, "");
+    }
+
+
+    ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-test-config.xml");
+    ArticleDAOImpl articleDAO = (ArticleDAOImpl) applicationContext.getBean("articleDAOTest");
+
+    /*@Test
+    public void testById() throws Exception {
+        List<Article> apartments = articleDAO.findAll();
+
+        IDataSet expectedData = new FlatXmlDataSetBuilder().build(Thread.currentThread().getContextClassLoader().getResourceAsStream("com.epam.entity.article/article-data.xml"));
+        Assert.assertEquals(expectedData.getTable("TESTARTICLE").getRowCount(), apartments.size());
+        logger.debug(expectedData.getTable("TESTARTICLE").getRowCount());
+        assertThat(expectedData.getTable("TESTARTICLE").getRowCount(), is(apartments.size()));
+    }
+
+    @Test
+    public void testFindByTitle() throws Exception {
+        Article actual = articleDAO.findByTitle(Loader.getTitleArticle2());
+
+        ParserMaker XMLmaker = getParserByName(ParserType.XML);
+        Parser XMLparser = XMLmaker.createParser();
+        Article expected = XMLparser.loadArticleFromFile(Loader.getXmlArticle2());
+        assertThat(actual, is(expected));
+    }*/
 }
+
