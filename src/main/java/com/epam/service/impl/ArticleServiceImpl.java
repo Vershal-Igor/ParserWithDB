@@ -13,11 +13,10 @@ import java.util.List;
 public class ArticleServiceImpl implements ArticleService {
     private static final Logger logger = Logger.getLogger(ArticleServiceImpl.class);
     private ArticleDAOImpl articleDAO;
-    private static final int ZERO_RECORDS_COUNT = 0;
 
     @Override
     public List<Article> findAll() throws ServiceException {
-        List<Article> articles = null;
+        List<Article> articles;
         try {
             articles = articleDAO.findAll();
         } catch (DAOException e) {
@@ -28,8 +27,16 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public Article findById(Long id) throws ServiceException {
-        return null;
+    public Article findByTitle(String title) throws ServiceException {
+        Article article;
+        try {
+            article = articleDAO.findByTitle(title);
+            logger.info("Article with title \"" + article.getTitle() + "\" was find: " + article);
+        } catch (DAOException e) {
+            logger.error("error while find by title", e);
+            throw new ServiceException("error while find by title", e);
+        }
+        return article;
     }
 
     @Override
@@ -38,8 +45,13 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public void delete(Long id) throws ServiceException {
-
+    public void delete(String id) throws ServiceException {
+        try {
+            articleDAO.delete(id);
+        } catch (DAOException e) {
+            logger.error("error while delete Article by id", e);
+            throw new ServiceException("error while delete Article by id", e);
+        }
     }
 
     public void deleteAll() throws ServiceException {
@@ -58,8 +70,24 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public void loadArticles(List<Article> articles) throws ServiceException {
+        //boolean inDatabase;
         try {
-            articleDAO.loadArticles(articles);
+            for (Article article : articles) {
+                Article inDatabase = articleDAO.findByTitle(article.getTitle());
+                if (inDatabase == null) {
+                    articleDAO.loadArticle((article));
+                } else {
+                    logger.info("\"" + article + "\"" + " Article is already in the database");
+                }
+            }
+            /*for (Article article : articles) {
+                inDatabase = articleDAO.checkArticle(article);
+                if (inDatabase) {
+                    articleDAO.loadArticle((article));
+                } else {
+                    logger.info("\"" + article + "\"" + " Article is already in the database");
+                }
+            }*/
         } catch (DAOException e) {
             logger.error("error while load all articles", e);
             throw new ServiceException("error while load all articles", e);
@@ -69,28 +97,22 @@ public class ArticleServiceImpl implements ArticleService {
     @Override
     public void loadArticle(Article article) throws ServiceException {
         try {
-            int recordCount = articleDAO.checkArticle(article);
-            if (recordCount == ZERO_RECORDS_COUNT) {
+            Article inDatabase = articleDAO.findByTitle(article.getTitle());
+            if (inDatabase == null) {
                 articleDAO.loadArticle(article);
             } else {
-                logger.info("\"" + article.getTitle() + "\"" + " Article is already in the database");
+                logger.info("\"" + article.getTitle() + "\" Article is already in the database");
             }
+           /* boolean inDatabase = articleDAO.checkArticle(article);
+            if (!inDatabase) {
+                articleDAO.loadArticle(article);
+            } else {
+                logger.info("\"" + article.getTitle() + "\" Article is already in the database");
+            }*/
         } catch (DAOException e) {
             logger.error("error while load article", e);
             throw new ServiceException("error while load article", e);
         }
-    }
-
-    @Override
-    public Article findByTitle(String title) throws ServiceException {
-        Article article = null;
-        try {
-            article = articleDAO.findByTitle(title);
-        } catch (DAOException e) {
-            logger.error("error while find by title", e);
-            throw new ServiceException("error while find by title", e);
-        }
-        return article;
     }
 
     public void setArticleDAO(ArticleDAOImpl articleDAO) {

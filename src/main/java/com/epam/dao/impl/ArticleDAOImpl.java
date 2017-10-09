@@ -10,7 +10,6 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 
 
-
 import java.util.List;
 
 
@@ -35,11 +34,6 @@ public class ArticleDAOImpl implements ArticleDAO {
     }
 
     @Override
-    public Article findById(Long id) throws DAOException {
-        return null;
-    }
-
-    @Override
     public Article findByTitle(String title) throws DAOException {
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
@@ -56,7 +50,7 @@ public class ArticleDAOImpl implements ArticleDAO {
     }
 
     @Override
-    public void delete(Long id) throws DAOException {
+    public void delete(String id) throws DAOException {
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
         Article article = (Article) session.get(Article.class, id);
@@ -64,7 +58,6 @@ public class ArticleDAOImpl implements ArticleDAO {
         session.flush();
         tx.commit();
         session.close();
-
     }
 
     public void deleteAll(List<Article> articles) throws DAOException {
@@ -74,7 +67,6 @@ public class ArticleDAOImpl implements ArticleDAO {
         session.flush();
         tx.commit();
         session.close();
-
     }
 
     @Override
@@ -104,20 +96,20 @@ public class ArticleDAOImpl implements ArticleDAO {
     }
 
     @Override
-    public int checkArticle(Article article) throws DAOException {
+    public boolean checkArticle(Article article) throws DAOException {
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
         Query query = session.createQuery("select exists (from Article where title =:title and author = :author)from Article ");
         query.setParameter("title", article.getTitle());
         query.setParameter("author", article.getAuthor());
         List<Article> articles = query.list();
-        if (articles == null){
-            return 0;
+        if (articles == null) {
+            return false;
         }
         session.flush();
         tx.commit();
         session.close();
-        return 1;
+        return true;
     }
 
     public void setSessionFactory(SessionFactory sessionFactory) {

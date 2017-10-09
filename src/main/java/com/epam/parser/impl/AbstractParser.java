@@ -32,8 +32,7 @@ public abstract class AbstractParser implements Parser {
 
     public Article loadArticleFromFile(String file) throws ParserException {
         List<Article> list = parse(file);
-        Article article = list.get(0);
-        return article;
+        return list.get(0);
     }
 
     protected abstract List<Article> parse(String directory) throws ParserException;

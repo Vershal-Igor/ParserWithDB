@@ -1,6 +1,7 @@
 package com.epam.parser.deserializer;
 
 import com.epam.entity.Article;
+import com.epam.parser.Loader;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
@@ -9,11 +10,9 @@ import com.fasterxml.jackson.databind.JsonNode;
 import java.io.IOException;
 
 public class CustomDeserializer extends JsonDeserializer<Article> {
-    private static final String DEFAULT_ELEMENT = "UNKNOWN";
-    private static final String NO_ELEMENT = " ";
 
     @Override
-    public Article deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException{
+    public Article deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException {
 
         JsonNode node = jsonParser.getCodec().readTree(jsonParser);
         JsonNode articleNode = node.get("article");
@@ -23,15 +22,15 @@ public class CustomDeserializer extends JsonDeserializer<Article> {
         String authorName = getCorrectElement(articleNode.get("author_name"));
 
         String contents = getCorrectElement(articleNode.get("content"));
-        return new Article(title, authorName,contents);
+        return new Article(title, authorName, contents);
     }
 
     private String getCorrectElement(JsonNode jsonNode) {
         if (jsonNode == null) {
-            return DEFAULT_ELEMENT;//return NO_ELEMENT;
+            return Loader.getDefaultElemenent();
         }
         if (jsonNode.asText().isEmpty()) {
-            return DEFAULT_ELEMENT;
+            return Loader.getDefaultElemenent();
         } else {
             return jsonNode.asText();
         }
