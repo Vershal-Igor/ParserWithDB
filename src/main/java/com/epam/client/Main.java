@@ -23,7 +23,6 @@ import static com.epam.parser.ParserMaker.getParserByName;
 
 public class Main {
     private static final Logger logger = Logger.getLogger(Main.class);
-    private static final String DIRECTORY = "src/main/resources/files";
 
 
     public static void main(String[] args) throws ParserException, ServiceException {
@@ -33,30 +32,31 @@ public class Main {
 
         ParserMaker XMLmaker = getParserByName(ParserType.XML);
         Parser XMLparser = XMLmaker.createParser();
-        List<Article> XMLarticles = XMLparser.loadArticlesFromDirectory(DIRECTORY);
+        List<Article> XMLarticles = XMLparser.loadArticlesFromDirectory(Loader.getDirectory());
 
         ParserMaker JSONmaker = getParserByName(ParserType.JSON);
         Parser JSONParser = JSONmaker.createParser();
-        List<Article> JSONarticles = JSONParser.loadArticlesFromDirectory(DIRECTORY);
+        List<Article> JSONarticles = JSONParser.loadArticlesFromDirectory(Loader.getDirectory());
 
         ParserMaker TXTmaker = getParserByName(ParserType.TXT);
         Parser TXTParser = TXTmaker.createParser();
-        List<Article> TXTarticles = TXTParser.loadArticlesFromDirectory(DIRECTORY);
+        List<Article> TXTarticles = TXTParser.loadArticlesFromDirectory(Loader.getDirectory());
 
         articleService.deleteAll();
 
-        articleService.loadArticle(XMLparser.loadArticleFromFile(Loader.getXmlArticle2()));
+        //articleService.loadArticle(XMLparser.loadArticleFromFile(Loader.getXmlArticle2()));
         //articleService.delete(Loader.getTitleArticle2());
 
         articleService.loadArticles(XMLarticles);
         articleService.loadArticles(JSONarticles);
         articleService.loadArticles(TXTarticles);
 
+
         //articleService.delete(Loader.getTitleArticle3());
 
         articleService.loadArticle(XMLparser.loadArticleFromFile(Loader.getXmlArticle2()));
 
-        articleService.findByTitle("Unknown");
+        articleService.findByTitle("Notes on Oracle Coherence.");
 
         logger.info(articleService.findAll());
 

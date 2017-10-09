@@ -40,11 +40,6 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public void add(Article entity) throws ServiceException {
-
-    }
-
-    @Override
     public void delete(String id) throws ServiceException {
         try {
             articleDAO.delete(id);
@@ -64,30 +59,26 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public void update(Article entity) throws ServiceException {
-
+    public void update(Article article) throws ServiceException {
+        try {
+            articleDAO.update(article);
+        } catch (DAOException e) {
+            logger.error("error while update article", e);
+            throw new ServiceException("error while update article", e);
+        }
     }
 
     @Override
     public void loadArticles(List<Article> articles) throws ServiceException {
-        //boolean inDatabase;
         try {
             for (Article article : articles) {
                 Article inDatabase = articleDAO.findByTitle(article.getTitle());
                 if (inDatabase == null) {
                     articleDAO.loadArticle((article));
                 } else {
-                    logger.info("\"" + article + "\"" + " Article is already in the database");
+                    logger.info("\"" + article.getTitle() + "\"" + " Article is already in the database");
                 }
             }
-            /*for (Article article : articles) {
-                inDatabase = articleDAO.checkArticle(article);
-                if (inDatabase) {
-                    articleDAO.loadArticle((article));
-                } else {
-                    logger.info("\"" + article + "\"" + " Article is already in the database");
-                }
-            }*/
         } catch (DAOException e) {
             logger.error("error while load all articles", e);
             throw new ServiceException("error while load all articles", e);
@@ -103,12 +94,6 @@ public class ArticleServiceImpl implements ArticleService {
             } else {
                 logger.info("\"" + article.getTitle() + "\" Article is already in the database");
             }
-           /* boolean inDatabase = articleDAO.checkArticle(article);
-            if (!inDatabase) {
-                articleDAO.loadArticle(article);
-            } else {
-                logger.info("\"" + article.getTitle() + "\" Article is already in the database");
-            }*/
         } catch (DAOException e) {
             logger.error("error while load article", e);
             throw new ServiceException("error while load article", e);
