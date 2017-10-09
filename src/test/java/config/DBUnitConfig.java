@@ -46,7 +46,7 @@ public class DBUnitConfig extends DBTestCase {
     @Transactional
     @Override
     protected DatabaseOperation getTearDownOperation() throws Exception {
-        return DatabaseOperation.NONE;
+        return DatabaseOperation.DELETE_ALL;
     }
 
     @Override

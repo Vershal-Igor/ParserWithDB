@@ -83,8 +83,60 @@ public class ArticleDAOImplTest extends DBUnitConfig {
         articleDAO.loadArticle(XMLparser.loadArticleFromFile(Loader.getXmlArticle2()));
     }*/
 
-    @Test
-    public void setSessionFactory() throws Exception {
+
+
+
+    /*@Test
+    public void testFindByTitle() throws Exception {
+        Article expected;
+        Article actual;
+
+        expected = XMLparser.loadArticleFromFile(Loader.getXmlArticle3());
+
+        actual = articleDAO.findByTitle(Loader.getTitleArticle3());
+
+        assertThat(expected, is(actual));
     }
+
+    @Test
+    public void testDelete() throws Exception {
+        Article article = new Article();
+        Article expected;
+        article.setTitle("TEST");
+        article.setAuthor("TEST");
+        articleDAO.loadArticle(article);
+        articleDAO.delete(article.getTitle());
+        expected = articleDAO.findByTitle(article.getTitle());
+
+        assertNull(expected);
+    }
+
+
+    @Test
+    public void testUpdate() throws Exception {
+        Article expected;
+        Article actual;
+
+        expected = articleDAO.findByTitle(Loader.getTitleArticle2());
+        expected.setAuthor("NEW AUTHOR");
+        articleDAO.update(expected);
+        actual = articleDAO.findByTitle(Loader.getTitleArticle2());
+
+        assertThat(expected.getAuthor(), is(actual.getAuthor()));
+    }
+
+    @Test
+    public void testLoadArticle() throws Exception {
+        Article expected = new Article();
+        Article actual;
+
+        expected.setTitle("AddTest");
+        expected.setAuthor("AddTest");
+
+        articleDAO.loadArticle(expected);
+        actual = articleDAO.findByTitle(expected.getTitle());
+
+        assertThat(expected, is(actual));
+    }*/
 
 }
