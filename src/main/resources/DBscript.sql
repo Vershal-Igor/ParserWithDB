@@ -21,7 +21,7 @@ USE `articles` ;
 -- Table `articles`.`articles`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `articles`.`articles` (
-  `title` VARCHAR(70) NOT NULL,
+  `title` VARCHAR(80) NOT NULL,
   `author` VARCHAR(45) NULL,
   `contents` LONGTEXT NULL DEFAULT NULL,
   PRIMARY KEY (`title`))
