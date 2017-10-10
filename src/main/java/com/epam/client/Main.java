@@ -35,12 +35,12 @@ public class Main {
         List<Article> XMLarticles = XMLparser.loadArticlesFromDirectory(Loader.getDirectory());
 
         ParserMaker JSONmaker = getParserByName(ParserType.JSON);
-        Parser JSONParser = JSONmaker.createParser();
-        List<Article> JSONarticles = JSONParser.loadArticlesFromDirectory(Loader.getDirectory());
+        Parser JSONparser = JSONmaker.createParser();
+        List<Article> JSONarticles = JSONparser.loadArticlesFromDirectory(Loader.getDirectory());
 
         ParserMaker TXTmaker = getParserByName(ParserType.TXT);
-        Parser TXTParser = TXTmaker.createParser();
-        List<Article> TXTarticles = TXTParser.loadArticlesFromDirectory(Loader.getDirectory());
+        Parser TXTparser = TXTmaker.createParser();
+        List<Article> TXTarticles = TXTparser.loadArticlesFromDirectory(Loader.getDirectory());
 
         articleService.deleteAll();
 

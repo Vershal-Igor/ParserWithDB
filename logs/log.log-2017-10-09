@@ -1,0 +1,78 @@
+2017-10-09 21:40:10 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@31b7dea0: startup date [Mon Oct 09 21:40:10 MSK 2017]; root of context hierarchy
+2017-10-09 21:40:10 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-test-config.xml]
+2017-10-09 21:40:10 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.test.properties]
+2017-10-09 21:40:11 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-09 21:40:11 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-09 21:40:11 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-09 21:40:11 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-09 21:40:11 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-09 21:40:11 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-09 21:40:11 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-09 21:40:12 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@6aecbb8d] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-09 21:40:12 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@57fd91c9: startup date [Mon Oct 09 21:40:12 MSK 2017]; root of context hierarchy
+2017-10-09 21:40:12 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-test-config.xml]
+2017-10-09 21:40:12 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.test.properties]
+2017-10-09 21:40:12 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-09 21:40:12 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-09 21:40:12 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-09 21:40:12 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@2ece4966] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-09 21:40:12 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1dd0e7c4: startup date [Mon Oct 09 21:40:12 MSK 2017]; root of context hierarchy
+2017-10-09 21:40:12 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-test-config.xml]
+2017-10-09 21:40:12 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.test.properties]
+2017-10-09 21:40:12 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-09 21:40:12 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-09 21:40:12 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-09 21:40:12 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@63192798] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-09 21:40:12 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@58e6d4b8: startup date [Mon Oct 09 21:40:12 MSK 2017]; root of context hierarchy
+2017-10-09 21:40:12 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-test-config.xml]
+2017-10-09 21:40:12 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.test.properties]
+2017-10-09 21:40:12 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-09 21:40:12 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-09 21:40:12 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-09 21:40:12 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@716a7124] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-09 21:40:43 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@e2d56bf: startup date [Mon Oct 09 21:40:43 MSK 2017]; root of context hierarchy
+2017-10-09 21:40:43 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-config.xml]
+2017-10-09 21:40:43 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.properties]
+2017-10-09 21:40:44 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-09 21:40:44 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-09 21:40:44 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-09 21:40:44 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-09 21:40:44 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-09 21:40:44 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-09 21:40:44 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-09 21:40:45 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@37ddb69a] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-09 21:40:46 INFO  impl.ArticleServiceImpl:95 - "The Java Platform module system" Article is already in the database
+2017-10-09 21:40:46 INFO  impl.ArticleServiceImpl:34 - Article with title "Notes on Oracle Coherence." was find: Author: Ricky Ho; Title: Notes on Oracle Coherence.
+2017-10-09 21:40:46 INFO  client.Main:61 - [Author: UNKNOWN; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction, Author: Ricky Ho; Title: Notes on Oracle Coherence., Author: UNKNOWN; Title: Spring Framework - Overview, Author: UNKNOWN; Title: TEST ARTICLE., Author: Sander Mak; Title: The Java Platform module system, Author: Thorben Janssen; Title: UNKNOWN, Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author: Jonathan Hult; Title: ﻿THE FEATURES AND BENEFITS OF ORACLE COHERENCE]
+2017-10-09 21:40:53 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c53fd30: startup date [Mon Oct 09 21:40:53 MSK 2017]; root of context hierarchy
+2017-10-09 21:40:53 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-test-config.xml]
+2017-10-09 21:40:54 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.test.properties]
+2017-10-09 21:40:55 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-10-09 21:40:55 INFO  hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+2017-10-09 21:40:55 INFO  cfg.Environment:239 - HHH000206: hibernate.properties not found
+2017-10-09 21:40:55 INFO  cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-09 21:40:55 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-09 21:40:55 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-09 21:40:55 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-09 21:40:56 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@607fbe09] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-09 21:40:56 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@62163b39: startup date [Mon Oct 09 21:40:56 MSK 2017]; root of context hierarchy
+2017-10-09 21:40:56 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-test-config.xml]
+2017-10-09 21:40:56 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.test.properties]
+2017-10-09 21:40:56 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-09 21:40:56 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-09 21:40:56 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-09 21:40:56 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@11eadcba] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-09 21:40:56 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4721d212: startup date [Mon Oct 09 21:40:56 MSK 2017]; root of context hierarchy
+2017-10-09 21:40:56 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-test-config.xml]
+2017-10-09 21:40:56 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.test.properties]
+2017-10-09 21:40:56 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-09 21:40:56 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-09 21:40:56 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-09 21:40:56 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@3ce3db41] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-09 21:40:56 INFO  support.ClassPathXmlApplicationContext:510 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@77602954: startup date [Mon Oct 09 21:40:56 MSK 2017]; root of context hierarchy
+2017-10-09 21:40:56 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-test-config.xml]
+2017-10-09 21:40:56 INFO  support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [db/db.test.properties]
+2017-10-09 21:40:56 INFO  dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-09 21:40:56 INFO  internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-09 21:40:56 INFO  ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-09 21:40:56 INFO  hibernate4.HibernateTransactionManager:360 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@55795845] of Hibernate SessionFactory for HibernateTransactionManager

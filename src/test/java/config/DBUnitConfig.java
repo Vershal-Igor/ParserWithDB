@@ -1,18 +1,15 @@
+/*
 package config;
 
-import static com.epam.parser.ParserMaker.getParserByName;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
+
 import java.io.IOException;
 import java.util.List;
 import java.util.Properties;
 
 import com.epam.dao.impl.ArticleDAOImpl;
 import com.epam.entity.Article;
-import com.epam.parser.Loader;
-import com.epam.parser.Parser;
-import com.epam.parser.ParserMaker;
-import com.epam.parser.ParserType;
 import org.apache.log4j.Logger;
 import org.dbunit.DBTestCase;
 import org.dbunit.IDatabaseTester;
@@ -32,10 +29,9 @@ import javax.transaction.Transactional;
 
 public class DBUnitConfig extends DBTestCase {
     private static final Logger logger = Logger.getLogger(DBUnitConfig.class);
-    protected IDatabaseTester tester; //Объект с помощью которого идёт сравнение табличек;
-    private Properties prop; // Настройки подключения;
-    protected IDataSet beforeData; // Данные для инициализации БД перд выполнением тестов;
-
+    protected IDatabaseTester tester;
+    private Properties prop;
+    protected IDataSet beforeData;
 
     @Transactional
     @Override
@@ -46,7 +42,7 @@ public class DBUnitConfig extends DBTestCase {
     @Transactional
     @Override
     protected DatabaseOperation getTearDownOperation() throws Exception {
-        return DatabaseOperation.DELETE_ALL;
+        return DatabaseOperation.NONE;
     }
 
     @Override
@@ -81,7 +77,7 @@ public class DBUnitConfig extends DBTestCase {
     ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-test-config.xml");
     ArticleDAOImpl articleDAO = (ArticleDAOImpl) applicationContext.getBean("articleDAOTest");
 
-    /*@Test
+    @Test
     public void testById() throws Exception {
         List<Article> apartments = articleDAO.findAll();
 
@@ -91,14 +87,6 @@ public class DBUnitConfig extends DBTestCase {
         assertThat(expectedData.getTable("TESTARTICLE").getRowCount(), is(apartments.size()));
     }
 
-    @Test
-    public void testFindByTitle() throws Exception {
-        Article actual = articleDAO.findByTitle(Loader.getTitleArticle2());
-
-        ParserMaker XMLmaker = getParserByName(ParserType.XML);
-        Parser XMLparser = XMLmaker.createParser();
-        Article expected = XMLparser.loadArticleFromFile(Loader.getXmlArticle2());
-        assertThat(actual, is(expected));
-    }*/
 }
 
+*/
