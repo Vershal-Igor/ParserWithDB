@@ -7,7 +7,7 @@ import com.epam.parser.ParserMaker;
 import com.epam.parser.ParserType;
 import com.epam.service.impl.ArticleServiceImpl;
 import com.github.springtestdbunit.DbUnitTestExecutionListener;
-import com.github.springtestdbunit.annotation.DbUnitConfiguration;
+import com.github.springtestdbunit.annotation.*;
 import org.apache.log4j.Logger;
 import org.dbunit.dataset.IDataSet;
 import org.dbunit.dataset.xml.FlatXmlDataSetBuilder;
@@ -34,11 +34,11 @@ import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:spring-test-config.xml", "classpath:spring-config.xml"})
-/*@DbUnitConfiguration(databaseConnection = {"testDataSource"})
+@ContextConfiguration(locations = {"classpath:spring-test-config.xml"/*, "classpath:spring-config.xml"*/})
+//@DbUnitConfiguration(databaseConnection = {"testDataSource"})
 @TestExecutionListeners({DependencyInjectionTestExecutionListener.class,
         DirtiesContextTestExecutionListener.class, TransactionalTestExecutionListener.class,
-        DbUnitTestExecutionListener.class})*/
+        DbUnitTestExecutionListener.class})
 
 
 public class ArticleDAOImplTest {
@@ -53,13 +53,13 @@ public class ArticleDAOImplTest {
     private List<Article> JSONarticles;
     private List<Article> TXTarticles;
 
-    @Autowired
-    ArticleServiceImpl articleService;
+    /*@Autowired
+    ArticleServiceImpl articleService;*/
 
-   /* ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-test-config.xml");
+    /*ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-test-config.xml");
     ArticleDAOImpl articleDAO = (ArticleDAOImpl) applicationContext.getBean("articleDAOTest");*/
 
-    @Before
+    /*@Before
     public void setUp() throws Exception {
         XMLmaker = getParserByName(ParserType.XML);
         XMLparser = XMLmaker.createParser();
@@ -77,19 +77,25 @@ public class ArticleDAOImplTest {
         articleService.loadArticles(XMLarticles);
         articleService.loadArticles(JSONarticles);
         articleService.loadArticles(TXTarticles);
-    }
+    }*/
 
     @Autowired
     ArticleDAOImpl articleDAO;
 
+    @DatabaseSetup("/com.epam.entity.article/article-data.xml")
+    @DatabaseTearDown(value = "/databaseTearDown.xml",
+            type = DatabaseOperation.CLEAN_INSERT)
     @Test
     public void testFindAll() throws Exception {
         List<Article> apartments = articleDAO.findAll();
+        final int expectedSize = 9;
+        assertThat(apartments.size(),is(expectedSize));
 
-        IDataSet expectedData = new FlatXmlDataSetBuilder().build(Thread.currentThread().getContextClassLoader().getResourceAsStream("com.epam.entity.article/article-data.xml"));
+
+        /*IDataSet expectedData = new FlatXmlDataSetBuilder().build(Thread.currentThread().getContextClassLoader().getResourceAsStream("com.epam.entity.article/article-data.xml"));
         logger.debug(expectedData.getTable("TESTARTICLE").getRowCount());
         Assert.assertEquals(expectedData.getTable("TESTARTICLE").getRowCount(), apartments.size());
-        assertThat(expectedData.getTable("TESTARTICLE").getRowCount(), is(apartments.size()));
+        assertThat(expectedData.getTable("TESTARTICLE").getRowCount(), is(apartments.size()));*/
 
     }
 
@@ -103,16 +109,20 @@ public class ArticleDAOImplTest {
         assertThat(actual, is(expected));
     }
 
+    @DatabaseSetup("/com.epam.entity.article/article-data.xml")
+    @ExpectedDatabase("/com.epam.entity.article/expexted-delete-data.xml")
+    /*@DatabaseTearDown(value = "/databaseTearDown.xml",
+            type = DatabaseOperation.CLEAN_INSERT)*/
     @Test
     public void delete() throws Exception {
-        Article expected = new Article();
+        //Article expected = new Article();
         ParserMaker XMLmaker = getParserByName(ParserType.XML);
         Parser XMLparser = XMLmaker.createParser();
         Article article = XMLparser.loadArticleFromFile(Loader.getXmlArticle3());
         articleDAO.delete(article.getTitle());
-        expected = articleDAO.findByTitle(article.getTitle());
+        /*expected = articleDAO.findByTitle(article.getTitle());*/
 
-        assertNull(expected);
+        /*assertNull(expected);*/
     }
 
     @Test

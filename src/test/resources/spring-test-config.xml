@@ -42,4 +42,9 @@
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>
 
+
+    <bean id="dbUnitDatabaseConnection" class="com.github.springtestdbunit.bean.DatabaseDataSourceConnectionFactoryBean">
+        <property name="dataSource" ref="testDataSource"/>
+    </bean>
+
 </beans>
