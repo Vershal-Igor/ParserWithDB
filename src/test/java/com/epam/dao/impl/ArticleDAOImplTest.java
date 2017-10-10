@@ -15,6 +15,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static com.epam.parser.ParserMaker.getParserByName;
@@ -136,6 +137,17 @@ public class ArticleDAOImplTest {
 
     @Test
     public void loadArticles() throws Exception {
+        List<Article> articles = new ArrayList<>();
+
+        articles.add(new Article("TestArticle1", "Test1"));
+        articles.add(new Article("TestArticle2", "Test2"));
+        articles.add(new Article("TestArticle3", "Test3"));
+        articleDAO.loadArticles(articles);
+        for (Article article : articles) {
+            Article inDatabase = articleDAO.findByTitle(article.getTitle());
+            assertThat(article, is(inDatabase));
+        }
+
     }
 
 }
