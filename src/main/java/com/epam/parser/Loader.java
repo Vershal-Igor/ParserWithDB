@@ -38,8 +38,15 @@ public final class Loader {
     private static final String AUTHOR_ARTICLE_7 = "AUTHOR_ARTICLE_7";
     private static final String AUTHOR_ARTICLE_8 = "AUTHOR_ARTICLE_8";
 
+    private static final String TITLE_ARTICLE_1 = "TITLE_ARTICLE_1";
     private static final String TITLE_ARTICLE_2 = "TITLE_ARTICLE_2";
     private static final String TITLE_ARTICLE_3 = "TITLE_ARTICLE_3";
+    private static final String TITLE_ARTICLE_4 = "TITLE_ARTICLE_4";
+    private static final String TITLE_ARTICLE_5 = "TITLE_ARTICLE_5";
+    private static final String TITLE_ARTICLE_6 = "TITLE_ARTICLE_6";
+    private static final String TITLE_ARTICLE_7 = "TITLE_ARTICLE_7";
+    private static final String TITLE_ARTICLE_8 = "TITLE_ARTICLE_8";
+    private static final String TITLE_ARTICLE_9 = "TITLE_ARTICLE_9";
 
     private static final String AUTHOR_ARTICLE_2 = "AUTHOR_ARTICLE_2";
     private static final String AUTHOR_ARTICLE_5 = "AUTHOR_ARTICLE_5";
@@ -119,12 +126,40 @@ public final class Loader {
         return rb.getString(AUTHOR_ARTICLE_8);
     }
 
+    public static String getTitleArticle1() {
+        return rb.getString(TITLE_ARTICLE_1);
+    }
+
     public static String getTitleArticle2() {
         return rb.getString(TITLE_ARTICLE_2);
     }
 
     public static String getTitleArticle3() {
         return rb.getString(TITLE_ARTICLE_3);
+    }
+
+    public static String getTitleArticle4() {
+        return rb.getString(TITLE_ARTICLE_4);
+    }
+
+    public static String getTitleArticle5() {
+        return rb.getString(TITLE_ARTICLE_5);
+    }
+
+    public static String getTitleArticle6() {
+        return rb.getString(TITLE_ARTICLE_6);
+    }
+
+    public static String getTitleArticle7() {
+        return rb.getString(TITLE_ARTICLE_7);
+    }
+
+    public static String getTitleArticle8() {
+        return rb.getString(TITLE_ARTICLE_8);
+    }
+
+    public static String getTitleArticle9() {
+        return rb.getString(TITLE_ARTICLE_9);
     }
 
     public static String getAuthorArticle2() {
