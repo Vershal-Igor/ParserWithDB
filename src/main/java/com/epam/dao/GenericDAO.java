@@ -11,6 +11,8 @@ public interface GenericDAO<E, K> {
 
     void delete(K id) throws DAOException;
 
+    void save(E entity) throws DAOException;
+
     void deleteAll() throws DAOException;
 
     void update(E entity) throws DAOException;

@@ -1,3 +1,4 @@
+/*
 
 package com.epam.dao.impl;
 
@@ -151,7 +152,7 @@ public class ArticleDAOImplTest {
 
         article = JSONparser.loadArticleFromFile(Loader.getJsonArticle4());
 
-        articleDAO.loadArticle(article);
+        articleDAO.save(article);
     }
 
     @DatabaseSetup("/com.epam.entity.article/load-articles-data.xml")
@@ -161,6 +162,6 @@ public class ArticleDAOImplTest {
             type = DatabaseOperation.CLEAN_INSERT)
     @Test
     public void shouldLoadArticles() throws Exception {
-        articleDAO.loadArticles(JSONarticles);
+        articleDAO.saveArticles(JSONarticles);
     }
-}
+}*/

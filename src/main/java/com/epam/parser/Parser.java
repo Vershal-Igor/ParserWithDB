@@ -5,6 +5,7 @@ import com.epam.entity.Article;
 import com.epam.parser.exception.ParserException;
 
 
+import java.io.File;
 import java.util.List;
 
 public interface Parser {

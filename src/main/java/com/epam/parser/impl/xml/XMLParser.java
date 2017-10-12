@@ -4,12 +4,12 @@ import com.epam.entity.Article;
 import com.epam.parser.Loader;
 import com.epam.parser.exception.ParserException;
 import com.epam.parser.impl.AbstractParser;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import com.epam.parser.reader.Reader;
+import com.epam.parser.reader.impl.XMLReader;
 import org.apache.log4j.Logger;
 
-import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.File;
+
 
 public class XMLParser extends AbstractParser {
     private static final Logger logger = Logger.getLogger(XMLParser.class);
@@ -20,43 +20,17 @@ public class XMLParser extends AbstractParser {
         super(TYPE);
     }
 
-    public List<Article> parse(String directory) throws ParserException {
-        List<Article> articles = new ArrayList<>();
-        File xmlFile = new File(directory);
-        XmlMapper xmlMapper = new XmlMapper();
+    public Article loadArticleFromFile(String file) throws ParserException {
+        Reader xmlReader = new XMLReader();
+        Article article;
         try {
-            String xml = inputStreamToString(new FileInputStream(xmlFile));
-            Article value = xmlMapper.readValue(xml, Article.class);
-            articles.add(returnArticleWithCorrectValues(value));
-        } catch (IOException e) {
+            article = xmlReader.read(new File(file));
+        } catch (ParserException e) {
             logger.error(Loader.getParserException(), e);
             throw new ParserException(Loader.getParserException(), e);
         }
-        System.out.println("---XML---\n"+articles);
-        return articles;
-    }
-
-    static Article returnArticleWithCorrectValues(Article value) {
-
-        if (value.getTitle() == null) {
-            value.setTitle(Loader.getDefaultElemenent());
-        }
-
-        if (value.getAuthor() == null) {
-            value.setAuthor(Loader.getDefaultElemenent());
-        }
-        return value;
-    }
-
-    public static String inputStreamToString(InputStream is) throws IOException {
-        StringBuilder sb = new StringBuilder();
-        String line;
-        BufferedReader br = new BufferedReader(new InputStreamReader(is));
-        while ((line = br.readLine()) != null) {
-            sb.append(line.trim());
-        }
-        br.close();
-        return sb.toString();
+        System.out.println("---XML---\n" + article);
+        return article;
     }
 
 }

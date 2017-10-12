@@ -4,16 +4,15 @@ import com.epam.parser.Loader;
 import com.epam.entity.Article;
 import com.epam.parser.exception.ParserException;
 import com.epam.parser.impl.AbstractParser;
+import com.epam.parser.reader.Reader;
+import com.epam.parser.reader.impl.TXTReader;
 import org.apache.log4j.Logger;
 
 import java.io.*;
-import java.nio.charset.Charset;
-import java.util.*;
 
 
 public class TXTParser extends AbstractParser {
     private static final Logger logger = Logger.getLogger(TXTParser.class);
-    private static final String AUTHOR_PATERN = "Written by:";
     private static final String TYPE = "txt";
 
 
@@ -22,51 +21,18 @@ public class TXTParser extends AbstractParser {
     }
 
     @Override
-    protected List<Article> parse(String directory) throws ParserException {
-        try (BufferedReader reader = new BufferedReader(
-                new InputStreamReader(
-                        new FileInputStream(
-                                new File(directory)),
-                        Charset.forName(Loader.getFileEncoding())))) {
-
-            String title = reader.readLine();
-            String author = pullAuthorName(directory);
-
-            ArrayList<Article> articles = new ArrayList<>();
-            articles.add(new Article(title, author));
-            System.out.println("---TXT---\n" + articles);
-            return articles;
-        } catch (FileNotFoundException e) {
-            logger.error(Loader.getFnfException() + directory, e);
-            throw new ParserException(Loader.getFnfException() + directory, e);
-        } catch (IOException e) {
-            logger.error(Loader.getIoException(), e);
-            throw new ParserException(Loader.getIoException(), e);
-        }
-    }
-
-    String pullAuthorName(String directory) throws ParserException {
-        String author = Loader.getDefaultElemenent();
+    public Article loadArticleFromFile(String file) throws ParserException {
+        Reader txtReader = new TXTReader();
+        Article article;
         try {
-            Scanner scanner = new Scanner(new FileReader(directory));
-            while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                if (line.startsWith(AUTHOR_PATERN)) {
-                    String[] array = line.split(": ");
-                    if (array.length == 2) {
-                        author = array[1].trim();
-                    } else {
-                        author = Loader.getDefaultElemenent();
-                    }
-                }
-            }
-        } catch (FileNotFoundException e) {
-            logger.error(Loader.getFnfException() + directory, e);
-            throw new ParserException(Loader.getFnfException() + directory, e);
+            article = txtReader.read(new File(file));
+            System.out.println("---TXT---\n" + article);
+            return article;
+        } catch (ParserException e) {
+            logger.error(Loader.getParserException() + file, e);
+            throw new ParserException(Loader.getParserException() + file, e);
         }
-        return author;
     }
-
 
 }
 

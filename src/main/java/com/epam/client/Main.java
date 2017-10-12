@@ -42,18 +42,12 @@ public class Main {
         Parser TXTparser = TXTmaker.createParser();
         List<Article> TXTarticles = TXTparser.loadArticlesFromDirectory(Loader.getDirectory());
 
-
-        articleService.deleteAll();
-
         articleService.loadArticles(XMLarticles);
         articleService.loadArticles(JSONarticles);
         articleService.loadArticles(TXTarticles);
 
-        articleService.loadArticle(XMLparser.loadArticleFromFile(Loader.getXmlArticle2()));
-
-        articleService.findByTitle("Notes on Oracle Coherence.");
-
         logger.info(articleService.findAll());
+        articleService.deleteAll();
 
     }
 }

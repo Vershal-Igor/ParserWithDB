@@ -15,7 +15,7 @@ import java.util.stream.StreamSupport;
 
 public final class Loader {
     private static final Logger logger = Logger.getLogger(Loader.class);
-    private static final ResourceBundle rb = ResourceBundle.getBundle("properties/common");
+    private static final ResourceBundle RB = ResourceBundle.getBundle("properties/common");
 
     private static final String DIRECTORY = "DIRECTORY";
     private static final String TEST_DIRECTORY = "TEST_DIRECTORY";
@@ -24,16 +24,16 @@ public final class Loader {
     private static final String DEFAULT_ELEMENT = "DEFAULT_ELEMENT";
 
     private static final String JSON_ARTICLE_1 = "JSON_ARTICLE_1";
-    private static final String JSON_ARTICLE_4 = "JSON_ARTICLE_4";
-    private static final String JSON_ARTICLE_6 = "JSON_ARTICLE_6";
+    private static final String JSON_ARTICLE_2 = "JSON_ARTICLE_2";
+    private static final String JSON_ARTICLE_3 = "JSON_ARTICLE_3";
 
-    private static final String TXT_ARTICLE_7 = "TXT_ARTICLE_7";
-    private static final String TXT_ARTICLE_8 = "TXT_ARTICLE_8";
-    private static final String TXT_ARTICLE_9 = "TXT_ARTICLE_9";
+    private static final String TXT_ARTICLE_1 = "TXT_ARTICLE_1";
+    private static final String TXT_ARTICLE_2 = "TXT_ARTICLE_2";
+    private static final String TXT_ARTICLE_3 = "TXT_ARTICLE_3";
 
+    private static final String XML_ARTICLE_1 = "XML_ARTICLE_1";
     private static final String XML_ARTICLE_2 = "XML_ARTICLE_2";
     private static final String XML_ARTICLE_3 = "XML_ARTICLE_3";
-    private static final String XML_ARTICLE_5 = "XML_ARTICLE_5";
 
     private static final String AUTHOR_ARTICLE_7 = "AUTHOR_ARTICLE_7";
     private static final String AUTHOR_ARTICLE_8 = "AUTHOR_ARTICLE_8";
@@ -67,123 +67,123 @@ public final class Loader {
 
 
     public static String getDirectory() {
-        return rb.getString(DIRECTORY);
+        return RB.getString(DIRECTORY);
     }
 
     public static String getTestDirectory() {
-        return rb.getString(TEST_DIRECTORY);
+        return RB.getString(TEST_DIRECTORY);
     }
 
     public static String getFailDirectory() {
-        return rb.getString(FAIL_DIRECTORY);
+        return RB.getString(FAIL_DIRECTORY);
     }
 
     public static String getDefaultElemenent() {
-        return rb.getString(DEFAULT_ELEMENT);
+        return RB.getString(DEFAULT_ELEMENT);
     }
 
     public static String getJsonArticle1() {
-        return rb.getString(JSON_ARTICLE_1);
+        return RB.getString(JSON_ARTICLE_1);
     }
 
-    public static String getJsonArticle4() {
-        return rb.getString(JSON_ARTICLE_4);
+    public static String getJsonArticle2() {
+        return RB.getString(JSON_ARTICLE_2);
     }
 
-    public static String getJsonArticle6() {
-        return rb.getString(JSON_ARTICLE_6);
+    public static String getJsonArticle3() {
+        return RB.getString(JSON_ARTICLE_3);
     }
 
-    public static String getTxtArticle7() {
-        return rb.getString(TXT_ARTICLE_7);
+    public static String getTxtArticle1() {
+        return RB.getString(TXT_ARTICLE_1);
     }
 
-    public static String getTxtArticle8() {
-        return rb.getString(TXT_ARTICLE_8);
+    public static String getTxtArticle2() {
+        return RB.getString(TXT_ARTICLE_2);
     }
 
-    public static String getTxtArticle9() {
-        return rb.getString(TXT_ARTICLE_9);
+    public static String getTxtArticle3() {
+        return RB.getString(TXT_ARTICLE_3);
+    }
+
+    public static String getXmlArticle1() {
+        return RB.getString(XML_ARTICLE_1);
     }
 
     public static String getXmlArticle2() {
-        return rb.getString(XML_ARTICLE_2);
+        return RB.getString(XML_ARTICLE_2);
     }
 
     public static String getXmlArticle3() {
-        return rb.getString(XML_ARTICLE_3);
-    }
-
-    public static String getXmlArticle5() {
-        return rb.getString(XML_ARTICLE_5);
+        return RB.getString(XML_ARTICLE_3);
     }
 
     public static String getAuthorArticle7() {
-        return rb.getString(AUTHOR_ARTICLE_7);
+        return RB.getString(AUTHOR_ARTICLE_7);
     }
 
     public static String getAuthorArticle8() {
-        return rb.getString(AUTHOR_ARTICLE_8);
+        return RB.getString(AUTHOR_ARTICLE_8);
     }
 
     public static String getTitleArticle1() {
-        return rb.getString(TITLE_ARTICLE_1);
+        return RB.getString(TITLE_ARTICLE_1);
     }
 
     public static String getTitleArticle2() {
-        return rb.getString(TITLE_ARTICLE_2);
+        return RB.getString(TITLE_ARTICLE_2);
     }
 
     public static String getTitleArticle3() {
-        return rb.getString(TITLE_ARTICLE_3);
+        return RB.getString(TITLE_ARTICLE_3);
     }
 
     public static String getTitleArticle4() {
-        return rb.getString(TITLE_ARTICLE_4);
+        return RB.getString(TITLE_ARTICLE_4);
     }
 
     public static String getTitleArticle5() {
-        return rb.getString(TITLE_ARTICLE_5);
+        return RB.getString(TITLE_ARTICLE_5);
     }
 
     public static String getTitleArticle6() {
-        return rb.getString(TITLE_ARTICLE_6);
+        return RB.getString(TITLE_ARTICLE_6);
     }
 
     public static String getTitleArticle7() {
-        return rb.getString(TITLE_ARTICLE_7);
+        return RB.getString(TITLE_ARTICLE_7);
     }
 
     public static String getTitleArticle8() {
-        return rb.getString(TITLE_ARTICLE_8);
+        return RB.getString(TITLE_ARTICLE_8);
     }
 
     public static String getTitleArticle9() {
-        return rb.getString(TITLE_ARTICLE_9);
+        return RB.getString(TITLE_ARTICLE_9);
     }
 
     public static String getAuthorArticle2() {
-        return rb.getString(AUTHOR_ARTICLE_2);
+        return RB.getString(AUTHOR_ARTICLE_2);
     }
 
     public static String getAuthorArticle5() {
-        return rb.getString(AUTHOR_ARTICLE_5);
+        return RB.getString(AUTHOR_ARTICLE_5);
     }
 
     public static String getFileEncoding() {
-        return rb.getString(FILE_ENCODING);
+        return RB.getString(FILE_ENCODING);
     }
 
     public static String getParserException() {
-        return rb.getString(PARSER_EXCEPTION);
+        return RB.getString(PARSER_EXCEPTION);
     }
 
     public static String getFnfException() {
-        return rb.getString(FNF_EXCEPTION);
+        return RB.getString(FNF_EXCEPTION);
     }
 
     public static String getIoException() {
-        return rb.getString(IO_EXCEPTION);
+        return RB.getString(IO_EXCEPTION);
     }
 
     public String[] loadFilesFromDirectoryByType(String directory, String type) throws ParserException {

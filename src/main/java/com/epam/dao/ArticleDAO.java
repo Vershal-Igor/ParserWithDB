@@ -7,9 +7,7 @@ import com.epam.entity.Article;
 import java.util.List;
 
 public interface ArticleDAO extends GenericDAO<Article, String> {
-    void loadArticles(List<Article> articles) throws DAOException;
-
-    void loadArticle(Article article) throws DAOException;
+    void saveArticles(List<Article> articles) throws DAOException;
 
     Article findByTitle(String title) throws DAOException;
 

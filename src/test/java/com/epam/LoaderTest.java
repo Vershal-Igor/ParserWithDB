@@ -19,24 +19,24 @@ public class LoaderTest {
     private static Object[] jsonArticlesFiles() {
         return new Object[]{
                 Loader.getJsonArticle1(),
-                Loader.getJsonArticle4(),
-                Loader.getJsonArticle6()
+                Loader.getJsonArticle2(),
+                Loader.getJsonArticle3()
         };
     }
 
     private static Object[] txtArticlesFiles() {
         return new Object[]{
-                Loader.getTxtArticle7(),
-                Loader.getTxtArticle8(),
-                Loader.getTxtArticle9()
+                Loader.getTxtArticle1(),
+                Loader.getTxtArticle2(),
+                Loader.getTxtArticle3()
         };
     }
 
     private static Object[] xmlArticlesFiles() {
         return new Object[]{
+                Loader.getXmlArticle1(),
                 Loader.getXmlArticle2(),
-                Loader.getXmlArticle3(),
-                Loader.getXmlArticle5()
+                Loader.getXmlArticle3()
         };
     }
 

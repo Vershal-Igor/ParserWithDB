@@ -1,4 +1,4 @@
-package com.epam.parser.deserializer;
+package com.epam.parser.impl.json;
 
 import com.epam.entity.Article;
 import com.epam.parser.Loader;
@@ -9,7 +9,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 
 import java.io.IOException;
 
-public class CustomDeserializer extends JsonDeserializer<Article> {
+public class CustomJsonReader extends JsonDeserializer<Article> {
 
     @Override
     public Article deserialize(JsonParser jsonParser, DeserializationContext deserializationContext) throws IOException {

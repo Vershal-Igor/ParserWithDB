@@ -33,11 +33,6 @@
         </property>
     </bean>
 
-    <bean id="transactionManager"
-          class="org.springframework.orm.hibernate4.HibernateTransactionManager">
-        <property name="sessionFactory" ref="sessionFactory"/>
-    </bean>
-
     <bean id="articleDAOTest" class="com.epam.dao.impl.ArticleDAOImpl">
         <property name="sessionFactory" ref="sessionFactory"/>
     </bean>

@@ -4,22 +4,29 @@ package com.epam.dao.impl;
 import com.epam.dao.ArticleDAO;
 import com.epam.dao.exception.DAOException;
 import com.epam.entity.Article;
+import org.hibernate.ObjectNotFoundException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
+import org.hibernate.exception.ConstraintViolationException;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 
 import java.util.List;
 
-
+/*@Transactional(propagation = Propagation.REQUIRED, rollbackFor = {ObjectNotFoundException.class,
+        ConstraintViolationException.class})*/
 public class ArticleDAOImpl implements ArticleDAO {
-
 
     private SessionFactory sessionFactory;
 
-    public ArticleDAOImpl() {
+    public void setSessionFactory(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
     }
 
+    public ArticleDAOImpl() {
+    }
 
     @Override
     public List<Article> findAll() throws DAOException {
@@ -44,16 +51,18 @@ public class ArticleDAOImpl implements ArticleDAO {
     }
 
     @Override
-    public void delete(String id) throws DAOException {
+    public void delete(String title) throws DAOException {
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
-        Article article = session.get(Article.class, id);
+        Article article = session.get(Article.class, title);
         session.delete(article);
         session.flush();
         tx.commit();
         session.close();
     }
 
+
+    @Override
     public void deleteAllFromList(List<Article> articles) throws DAOException {
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
@@ -63,6 +72,7 @@ public class ArticleDAOImpl implements ArticleDAO {
         session.close();
     }
 
+    @Override
     public void deleteAll() throws DAOException {
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
@@ -82,9 +92,8 @@ public class ArticleDAOImpl implements ArticleDAO {
         session.close();
     }
 
-
     @Override
-    public void loadArticles(List<Article> articles) throws DAOException {
+    public void saveArticles(List<Article> articles) throws DAOException {
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
         articles.forEach(session::save);
@@ -94,7 +103,7 @@ public class ArticleDAOImpl implements ArticleDAO {
     }
 
     @Override
-    public void loadArticle(Article article) throws DAOException {
+    public void save(Article article) throws DAOException {
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
         session.save(article);
@@ -103,7 +112,4 @@ public class ArticleDAOImpl implements ArticleDAO {
         session.close();
     }
 
-    public void setSessionFactory(SessionFactory sessionFactory) {
-        this.sessionFactory = sessionFactory;
-    }
 }

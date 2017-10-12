@@ -6,6 +6,7 @@ import com.epam.parser.Loader;
 import com.epam.parser.Parser;
 import com.epam.parser.exception.ParserException;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,16 +25,10 @@ public abstract class AbstractParser implements Parser {
         String[] names = Loader.getInstance().loadFilesFromDirectoryByType(directory, type);
 
         for (String name : names) {
-            List<Article> list = parse(name);
-            articleList.addAll(list);
+            Article list = loadArticleFromFile(name);
+            articleList.add(list);
         }
         return articleList;
     }
 
-    public Article loadArticleFromFile(String file) throws ParserException {
-        List<Article> list = parse(file);
-        return list.get(0);
-    }
-
-    protected abstract List<Article> parse(String directory) throws ParserException;
 }
