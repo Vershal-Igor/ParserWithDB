@@ -36,7 +36,7 @@ public class ArticleDAOImpl implements ArticleDAO {
     public Article findByTitle(String title) throws DAOException {
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
-        Article article = (Article) session.get(Article.class, title);
+        Article article = session.get(Article.class, title);
         session.flush();
         tx.commit();
         session.close();
@@ -47,17 +47,26 @@ public class ArticleDAOImpl implements ArticleDAO {
     public void delete(String id) throws DAOException {
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
-        Article article = (Article) session.get(Article.class, id);
+        Article article = session.get(Article.class, id);
         session.delete(article);
         session.flush();
         tx.commit();
         session.close();
     }
 
-    public void deleteAll(List<Article> articles) throws DAOException {
+    public void deleteAllFromList(List<Article> articles) throws DAOException {
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
         articles.forEach(session::delete);
+        session.flush();
+        tx.commit();
+        session.close();
+    }
+
+    public void deleteAll() throws DAOException {
+        Session session = sessionFactory.openSession();
+        Transaction tx = session.beginTransaction();
+        findAll().forEach(session::delete);
         session.flush();
         tx.commit();
         session.close();

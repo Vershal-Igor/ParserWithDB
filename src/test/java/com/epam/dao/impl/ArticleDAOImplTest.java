@@ -67,7 +67,7 @@ public class ArticleDAOImplTest {
     @DatabaseTearDown(value = "/databaseTearDown.xml",
             type = DatabaseOperation.CLEAN_INSERT)
     @Test
-    public void testFindAll() throws Exception {
+    public void shouldFindAll() throws Exception {
         List<Article> apartments = articleDAO.findAll();
         final int expectedSize = 8;
         assertThat(apartments.size()).isEqualTo(expectedSize);
@@ -77,7 +77,7 @@ public class ArticleDAOImplTest {
     @DatabaseTearDown(value = "/databaseTearDown.xml",
             type = DatabaseOperation.CLEAN_INSERT)
     @Test
-    public void testFindByTitle() throws Exception {
+    public void shouldFindByTitle() throws Exception {
         Article actual;
         Article expected;
 
@@ -97,9 +97,20 @@ public class ArticleDAOImplTest {
     @DatabaseTearDown(value = "/databaseTearDown.xml",
             type = DatabaseOperation.CLEAN_INSERT)
     @Test
-    public void delete() throws Exception {
+    public void shouldDeleteByTitle() throws Exception {
         Article article = XMLparser.loadArticleFromFile(Loader.getXmlArticle2());
         articleDAO.delete(article.getTitle());
+    }
+
+    @DatabaseSetup("/com.epam.entity.article/article-data.xml")
+    @ExpectedDatabase(assertionMode = DatabaseAssertionMode.NON_STRICT_UNORDERED,
+            value = "/com.epam.entity.article/deleteAllFromSet-article-data.xml")
+    @DatabaseTearDown(value = "/databaseTearDown.xml",
+            type = DatabaseOperation.CLEAN_INSERT)
+    @Test
+    public void shouldDeleteAllFromList() throws Exception {
+        articleDAO.deleteAllFromList(JSONarticles);
+        articleDAO.deleteAllFromList(TXTarticles);
     }
 
     @DatabaseSetup("/com.epam.entity.article/article-data.xml")
@@ -108,9 +119,8 @@ public class ArticleDAOImplTest {
     @DatabaseTearDown(value = "/databaseTearDown.xml",
             type = DatabaseOperation.CLEAN_INSERT)
     @Test
-    public void deleteAll() throws Exception {
-        articleDAO.deleteAll(JSONarticles);
-        articleDAO.deleteAll(TXTarticles);
+    public void shouldDeleteAll() throws Exception {
+        articleDAO.deleteAll();
     }
 
     @DatabaseSetup("/com.epam.entity.article/article-data.xml")
@@ -119,7 +129,7 @@ public class ArticleDAOImplTest {
     @DatabaseTearDown(value = "/databaseTearDown.xml",
             type = DatabaseOperation.CLEAN_INSERT)
     @Test
-    public void testUpdate() throws Exception {
+    public void shouldUpdateArticle() throws Exception {
         Article expected;
 
         expected = TXTparser.loadArticleFromFile(Loader.getTxtArticle9());
@@ -136,7 +146,7 @@ public class ArticleDAOImplTest {
     @DatabaseTearDown(value = "/databaseTearDown.xml",
             type = DatabaseOperation.CLEAN_INSERT)
     @Test
-    public void loadArticle() throws Exception {
+    public void shouldLoadArticle() throws Exception {
         Article article;
 
         article = JSONparser.loadArticleFromFile(Loader.getJsonArticle4());
@@ -150,7 +160,7 @@ public class ArticleDAOImplTest {
     @DatabaseTearDown(value = "/databaseTearDown.xml",
             type = DatabaseOperation.CLEAN_INSERT)
     @Test
-    public void loadArticles() throws Exception {
+    public void shouldLoadArticles() throws Exception {
         articleDAO.loadArticles(JSONarticles);
     }
 }

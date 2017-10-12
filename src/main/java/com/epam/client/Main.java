@@ -42,17 +42,12 @@ public class Main {
         Parser TXTparser = TXTmaker.createParser();
         List<Article> TXTarticles = TXTparser.loadArticlesFromDirectory(Loader.getDirectory());
 
-        articleService.deleteAll();
 
-        //articleService.loadArticle(XMLparser.loadArticleFromFile(Loader.getXmlArticle2()));
-        //articleService.delete(Loader.getTitleArticle2());
+        articleService.deleteAll();
 
         articleService.loadArticles(XMLarticles);
         articleService.loadArticles(JSONarticles);
         articleService.loadArticles(TXTarticles);
-
-
-        //articleService.delete(Loader.getTitleArticle3());
 
         articleService.loadArticle(XMLparser.loadArticleFromFile(Loader.getXmlArticle2()));
 

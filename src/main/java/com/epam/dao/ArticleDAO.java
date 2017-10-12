@@ -12,4 +12,6 @@ public interface ArticleDAO extends GenericDAO<Article, String> {
     void loadArticle(Article article) throws DAOException;
 
     Article findByTitle(String title) throws DAOException;
+
+    void deleteAllFromList(List<Article> articles) throws DAOException;
 }

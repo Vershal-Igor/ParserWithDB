@@ -49,9 +49,20 @@ public class ArticleServiceImpl implements ArticleService {
         }
     }
 
+    @Override
+    public void deleteAllFromList(List<Article> articles) throws ServiceException {
+        try {
+            articleDAO.deleteAllFromList(articles);
+        } catch (DAOException e) {
+            logger.error("error while delete all articles from list", e);
+            throw new ServiceException("error while delete all articles from list", e);
+        }
+    }
+
+    @Override
     public void deleteAll() throws ServiceException {
         try {
-            articleDAO.deleteAll(articleDAO.findAll());
+            articleDAO.deleteAll();
         } catch (DAOException e) {
             logger.error("error while delete all articles", e);
             throw new ServiceException("error while delete all articles", e);

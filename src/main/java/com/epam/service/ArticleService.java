@@ -12,4 +12,6 @@ public interface ArticleService extends GenericService<Article, String> {
     void loadArticle(Article article) throws ServiceException;
 
     Article findByTitle(String title) throws ServiceException;
+
+    void deleteAllFromList(List<Article> articles) throws ServiceException;
 }
