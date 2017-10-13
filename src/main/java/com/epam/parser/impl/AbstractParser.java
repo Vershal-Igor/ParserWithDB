@@ -6,7 +6,6 @@ import com.epam.parser.Loader;
 import com.epam.parser.Parser;
 import com.epam.parser.exception.ParserException;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 

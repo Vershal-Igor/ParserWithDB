@@ -30,7 +30,7 @@ public class XMLReader implements Reader {
         return article;
     }
 
-    static Article returnArticleWithCorrectValues(Article value) {
+    private Article returnArticleWithCorrectValues(Article value) {
 
         if (value.getTitle() == null) {
             value.setTitle(Loader.getDefaultElemenent());
@@ -42,7 +42,7 @@ public class XMLReader implements Reader {
         return value;
     }
 
-    public static String inputStreamToString(InputStream is) throws IOException {
+     private String inputStreamToString(InputStream is) throws IOException {
         StringBuilder sb = new StringBuilder();
         String line;
         BufferedReader br = new BufferedReader(new InputStreamReader(is));

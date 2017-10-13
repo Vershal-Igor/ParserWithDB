@@ -74,7 +74,17 @@ public class JSONParserTest {
     }
 
     @Test
-    public void shouldParseJSONWithoutAuthorFromFile() throws Exception {
+    public void shouldReturnCorrectAttributesForJSONArticleWithAuthor() throws Exception {
+        Article actual;
+
+        actual = JSONparser.loadArticleFromFile(Loader.getJsonArticle1());
+        logger.info(actual);
+
+        assertEquals(JSON_ARTICLE_1, actual);
+    }
+
+    @Test
+    public void shouldReturnCorrectAttributesForJSONArticleWithoutAuthor() throws Exception {
         Article actual;
 
         actual = JSONparser.loadArticleFromFile(Loader.getJsonArticle3());

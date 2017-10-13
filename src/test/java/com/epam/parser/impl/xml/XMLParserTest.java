@@ -1,13 +1,14 @@
-/*
 package com.epam.parser.impl.xml;
 
+import com.epam.entity.ArticleCreator;
 import com.epam.parser.Loader;
 import com.epam.parser.Parser;
 import com.epam.parser.ParserMaker;
 import com.epam.parser.ParserType;
 import com.epam.entity.Article;
 import com.epam.parser.exception.ParserException;
-import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import com.epam.parser.reader.Reader;
+import com.epam.parser.reader.impl.XMLReader;
 import org.apache.log4j.Logger;
 
 
@@ -17,20 +18,40 @@ import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 
-import java.io.*;
+import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 
 import static com.epam.parser.ParserMaker.getParserByName;
-import static com.epam.parser.impl.xml.XMLParser.inputStreamToString;
-import static com.epam.parser.impl.xml.XMLParser.returnArticleWithCorrectValues;
 import static org.junit.Assert.*;
 
 public class XMLParserTest {
     private static final Logger logger = Logger.getLogger(XMLParserTest.class);
 
+    private static final ResourceBundle RB = ResourceBundle.getBundle("properties/common");
+
+    private static final Article XML_ARTICLE_1 = new ArticleCreator()
+            .setTitle(RB.getString("XML.TITLE.1"))
+            .setAuthor(RB.getString("XML.AUTHOR.1"))
+            .setContents(RB.getString("XML.CONTENTS.1"))
+            .create();
+
+    private static final Article XML_ARTICLE_2 = new ArticleCreator()
+            .setTitle(RB.getString("XML.TITLE.2"))
+            .setAuthor(RB.getString("XML.AUTHOR.2"))
+            .setContents(RB.getString("XML.CONTENTS.2"))
+            .create();
+
+    private static final Article XML_ARTICLE_3 = new ArticleCreator()
+            .setTitle(RB.getString("XML.TITLE.3"))
+            .setAuthor(RB.getString("XML.AUTHOR.3"))
+            .setContents(RB.getString("XML.CONTENTS.3"))
+            .create();
+
 
     private Parser XMLparser;
-    private XmlMapper xmlMapper;
+    private Reader reader;
 
 
     @Rule
@@ -40,92 +61,70 @@ public class XMLParserTest {
     public void setUp() throws Exception {
         ParserMaker XMLmaker = getParserByName(ParserType.XML);
         XMLparser = XMLmaker.createParser();
-
-        xmlMapper = new XmlMapper();
+        reader = new XMLReader();
     }
 
-
     @Test
-    public void shouldParseXML() throws Exception {
-        List<Article> expected;
-        List<Article> actual;
+    public void shouldParseAllXMLFromDirectory() throws Exception {
 
-        expected = XMLparser.loadArticlesFromDirectory(Loader.getDirectory());
-        actual = XMLparser.loadArticlesFromDirectory(Loader.getTestDirectory());
+        List<Article> expected = new ArrayList<>();
+        List<Article> actual = new ArrayList<>();
+
+        Article eXML1 = XMLparser.loadArticleFromFile(Loader.getXmlArticle1());
+        Article eXML2 = XMLparser.loadArticleFromFile(Loader.getXmlArticle2());
+        Article eXML3 = XMLparser.loadArticleFromFile(Loader.getXmlArticle3());
+        expected.add(eXML1);
+        expected.add(eXML2);
+        expected.add(eXML3);
+
+        Article txt1 = reader.read(new File(Loader.getXmlArticle1()));
+        Article txt2 = reader.read(new File(Loader.getXmlArticle2()));
+        Article txt3 = reader.read(new File(Loader.getXmlArticle3()));
+        actual.add(txt1);
+        actual.add(txt2);
+        actual.add(txt3);
 
         assertEquals(expected, actual);
     }
 
     @Test
-    public void shouldReturnCorrectParametersForArticle2() throws IOException {
-        String expectedTitle;
-        String expectedAuthor;
+    public void shouldReturnCorrectAttributesForXMLArticleWithAuthor() throws ParserException {
+        Article expected;
+        Article actual;
 
-        String actualTitle;
-        String actualAuthor;
+        expected = XMLparser.loadArticleFromFile(Loader.getXmlArticle1());
+        actual = XML_ARTICLE_1;
 
-        File xmlFile2 = new File(Loader.getXmlArticle2());
+        assertEquals(expected.getTitle(), actual.getTitle());
+        assertEquals(expected.getAuthor(), actual.getAuthor());
 
-        String xml2 = inputStreamToString(new FileInputStream(xmlFile2));
-        Article article2 = xmlMapper.readValue(xml2, Article.class);
-        logger.info(returnArticleWithCorrectValues(article2));
-
-        expectedTitle = article2.getTitle();
-        actualTitle = Loader.getTitleArticle2();
-
-        expectedAuthor = article2.getAuthor();
-        actualAuthor = Loader.getAuthorArticle2();
-
-        assertEquals(expectedTitle, actualTitle);
-        assertEquals(expectedAuthor, actualAuthor);
+        logger.info(expected);
     }
 
     @Test
-    public void shouldReturnCorrectParametersForArticle3() throws IOException {
-        String expectedTitle;
-        String expectedAuthor;
+    public void shouldReturnCorrectAttributesForXMLArticleWithoutAuthor() throws ParserException {
+        Article expected;
+        Article actual;
 
-        String actualTitle;
-        String actualAuthor;
+        expected = XMLparser.loadArticleFromFile(Loader.getXmlArticle2());
+        actual = XML_ARTICLE_2;
 
-        File xmlFile3 = new File(Loader.getXmlArticle3());
+        assertEquals(expected, actual);
 
-        String xml3 = inputStreamToString(new FileInputStream(xmlFile3));
-        Article article3 = xmlMapper.readValue(xml3, Article.class);
-        logger.info(returnArticleWithCorrectValues(article3));
-
-        expectedTitle = article3.getTitle();
-        actualTitle = Loader.getTitleArticle3();
-
-        expectedAuthor = article3.getAuthor();
-        actualAuthor = Loader.getDefaultElemenent();
-
-        assertEquals(expectedTitle, actualTitle);
-        assertEquals(expectedAuthor, actualAuthor);
+        logger.info(expected);
     }
 
     @Test
-    public void shouldReturnCorrectParametersForArticle5() throws IOException {
-        String expectedTitle;
-        String expectedAuthor;
+    public void shouldReturnCorrectAttributesForXMLArticleWithoutTitle() throws ParserException {
+        Article expected;
+        Article actual;
 
-        String actualTitle;
-        String actualAuthor;
+        expected = XMLparser.loadArticleFromFile(Loader.getXmlArticle3());
+        actual = XML_ARTICLE_3;
 
-        File xmlFile5 = new File(Loader.getXmlArticle5());
+        assertEquals(expected, actual);
 
-        String xml5 = inputStreamToString(new FileInputStream(xmlFile5));
-        Article article5 = xmlMapper.readValue(xml5, Article.class);
-        logger.info(returnArticleWithCorrectValues(article5));
-
-        expectedTitle = article5.getTitle();
-        actualTitle = Loader.getDefaultElemenent();
-
-        expectedAuthor = article5.getAuthor();
-        actualAuthor = Loader.getAuthorArticle5();
-
-        assertEquals(expectedTitle, actualTitle);
-        assertEquals(expectedAuthor, actualAuthor);
+        logger.info(expected);
     }
 
     @Test
@@ -134,4 +133,4 @@ public class XMLParserTest {
         XMLparser.loadArticlesFromDirectory(Loader.getFailDirectory());
     }
 
-}*/
+}

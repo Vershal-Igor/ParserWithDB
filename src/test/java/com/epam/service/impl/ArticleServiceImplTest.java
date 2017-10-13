@@ -1,9 +1,9 @@
-/*
 package com.epam.service.impl;
 
 
 import com.epam.dao.impl.ArticleDAOImpl;
 import com.epam.entity.Article;
+import com.epam.entity.ArticleCreator;
 import com.epam.parser.Loader;
 import com.epam.parser.Parser;
 import com.epam.parser.ParserMaker;
@@ -15,10 +15,11 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.ResourceBundle;
 
-import static com.epam.parser.ParserMaker.getParserByName;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.times;
 import static org.mockito.MockitoAnnotations.initMocks;
@@ -33,29 +34,79 @@ public class ArticleServiceImplTest {
     @Mock
     private ArticleDAOImpl articleDAO;
 
-    private ParserMaker XMLmaker;
-    private ParserMaker JSONmaker;
-    private ParserMaker TXTmaker;
-    private Parser XMLparser;
-    private Parser JSONparser;
-    private Parser TXTparser;
-    private List<Article> XMLarticles;
-    private List<Article> JSONarticles;
-    private List<Article> TXTarticles;
+    private static final ResourceBundle RB = ResourceBundle.getBundle("properties/common");
+
+    private static final Article JSON_ARTICLE_1 = new ArticleCreator()
+            .setTitle(RB.getString("JSON.TITLE.1"))
+            .setAuthor(RB.getString("JSON.AUTHOR.1"))
+            .setContents(RB.getString("JSON.CONTENTS.1"))
+            .create();
+
+    private static final Article JSON_ARTICLE_2 = new ArticleCreator()
+            .setTitle(RB.getString("JSON.TITLE.2"))
+            .setAuthor(RB.getString("JSON.AUTHOR.2"))
+            .setContents(RB.getString("JSON.CONTENTS.2"))
+            .create();
+
+    private static final Article JSON_ARTICLE_3 = new ArticleCreator()
+            .setTitle(RB.getString("JSON.TITLE.3"))
+            .setAuthor(RB.getString("JSON.AUTHOR.3"))
+            .setContents(RB.getString("JSON.CONTENTS.3"))
+            .create();
+
+    private static final Article TXT_ARTICLE_1 = new ArticleCreator()
+            .setTitle(RB.getString("TXT.TITLE.1"))
+            .setAuthor(RB.getString("TXT.AUTHOR.1"))
+            .setContents(RB.getString("TXT.CONTENTS.1"))
+            .create();
+
+    private static final Article TXT_ARTICLE_2 = new ArticleCreator()
+            .setTitle(RB.getString("TXT.TITLE.2"))
+            .setAuthor(RB.getString("TXT.AUTHOR.2"))
+            .setContents(RB.getString("TXT.CONTENTS.2"))
+            .create();
+
+    private static final Article TXT_ARTICLE_3 = new ArticleCreator()
+            .setTitle(RB.getString("TXT.TITLE.3"))
+            .setAuthor(RB.getString("TXT.AUTHOR.3"))
+            .setContents(RB.getString("TXT.CONTENTS.3"))
+            .create();
+
+    private static final Article XML_ARTICLE_1 = new ArticleCreator()
+            .setTitle(RB.getString("XML.TITLE.1"))
+            .setAuthor(RB.getString("XML.AUTHOR.1"))
+            .setContents(RB.getString("XML.CONTENTS.1"))
+            .create();
+
+    private static final Article XML_ARTICLE_2 = new ArticleCreator()
+            .setTitle(RB.getString("XML.TITLE.2"))
+            .setAuthor(RB.getString("XML.AUTHOR.2"))
+            .setContents(RB.getString("XML.CONTENTS.2"))
+            .create();
+
+    private static final Article XML_ARTICLE_3 = new ArticleCreator()
+            .setTitle(RB.getString("XML.TITLE.3"))
+            .setAuthor(RB.getString("XML.AUTHOR.3"))
+            .setContents(RB.getString("XML.CONTENTS.3"))
+            .create();
+
+    private List<Article> XMLarticles = new ArrayList<>();
+    private List<Article> JSONarticles = new ArrayList<>();
+    private List<Article> TXTarticles = new ArrayList<>();
 
     @Before
     public void setUp() throws Exception {
-        XMLmaker = getParserByName(ParserType.XML);
-        XMLparser = XMLmaker.createParser();
-        XMLarticles = XMLparser.loadArticlesFromDirectory(Loader.getDirectory());
+        XMLarticles.add(XML_ARTICLE_1);
+        XMLarticles.add(XML_ARTICLE_2);
+        XMLarticles.add(XML_ARTICLE_3);
 
-        JSONmaker = getParserByName(ParserType.JSON);
-        JSONparser = JSONmaker.createParser();
-        JSONarticles = JSONparser.loadArticlesFromDirectory(Loader.getDirectory());
+        JSONarticles.add(JSON_ARTICLE_1);
+        JSONarticles.add(JSON_ARTICLE_2);
+        JSONarticles.add(JSON_ARTICLE_3);
 
-        TXTmaker = getParserByName(ParserType.TXT);
-        TXTparser = TXTmaker.createParser();
-        TXTarticles = TXTparser.loadArticlesFromDirectory(Loader.getDirectory());
+        TXTarticles.add(TXT_ARTICLE_1);
+        TXTarticles.add(TXT_ARTICLE_2);
+        TXTarticles.add(TXT_ARTICLE_3);
 
         initMocks(this);
     }
@@ -74,21 +125,22 @@ public class ArticleServiceImplTest {
 
     @Test
     public void shouldFindByTitle() throws Exception {
-        Article expectedArticle = JSONparser.loadArticleFromFile(Loader.getJsonArticle1());
+        Article expectedArticle = JSON_ARTICLE_1;
 
         when(articleDAO.findByTitle(Loader.getTitleArticle1())).thenReturn(expectedArticle);
-        Article actualArticle = articleService.findByTitle(Loader.getTitleArticle1());
+        Article actualArticle = articleService.findByTitle(JSON_ARTICLE_1.getTitle());
 
         assertNotNull(actualArticle);
         assertEquals(expectedArticle, actualArticle);
-        verify(articleDAO).findByTitle(Loader.getTitleArticle1());
+        verify(articleDAO).findByTitle(JSON_ARTICLE_1.getTitle());
     }
 
     @Test
     public void shouldDeleteByTitle() throws Exception {
-        articleDAO.delete(Loader.getTitleArticle9());
-        articleService.delete(Loader.getTitleArticle9());
-        verify(articleDAO, times(2)).delete(Loader.getTitleArticle9());
+        String title = TXT_ARTICLE_3.getTitle();
+        articleDAO.delete(title);
+        articleService.delete(title);
+        verify(articleDAO, times(2)).delete(title);
     }
 
     @Test
@@ -114,27 +166,25 @@ public class ArticleServiceImplTest {
     }
 
     @Test
-    public void shouldLoadArticles() throws Exception {
-        Article expectrdArticle = JSONparser.loadArticleFromFile(Loader.getJsonArticle1());
+    public void shouldSaveArticles() throws Exception {
+        Article expectedArticle = JSON_ARTICLE_1;
 
-        articleDAO.save(expectrdArticle);
+        articleDAO.save(expectedArticle);
         articleDAO.saveArticles(JSONarticles);
 
-        articleService.loadArticles(JSONarticles);
+        articleService.saveArticles(JSONarticles);
 
-        //verify(articleDAO,times(2)).save(expectrdArticle);
         verify(articleDAO).saveArticles(JSONarticles);
     }
 
     @Test
-    public void shouldLoadArticle() throws Exception {
-        Article expectrdArticle = TXTparser.loadArticleFromFile(Loader.getTxtArticle9());
-        articleDAO.save(expectrdArticle);
+    public void shouldSaveArticle() throws Exception {
+        Article expectedArticle = TXT_ARTICLE_3;
+        articleDAO.save(expectedArticle);
 
-        articleService.loadArticle(expectrdArticle);
+        articleService.save(expectedArticle);
 
-        verify(articleDAO, times(2)).save(expectrdArticle);
+        verify(articleDAO, times(2)).save(expectedArticle);
     }
 
 }
-*/

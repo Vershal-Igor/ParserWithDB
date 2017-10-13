@@ -8,15 +8,10 @@ import com.epam.parser.exception.ParserException;
 import com.epam.parser.impl.AbstractParser;
 import com.epam.parser.reader.Reader;
 import com.epam.parser.reader.impl.JSONReader;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.module.SimpleModule;
 import org.apache.log4j.Logger;
 
-
 import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class JSONParser extends AbstractParser {
     private static final Logger logger = Logger.getLogger(JSONParser.class);

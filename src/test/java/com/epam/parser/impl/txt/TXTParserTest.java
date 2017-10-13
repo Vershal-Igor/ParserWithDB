@@ -47,7 +47,6 @@ public class TXTParserTest {
             .create();
 
     private Parser TXTparser;
-    private TXTParser txtParser;
     private Reader reader;
 
 
@@ -58,42 +57,38 @@ public class TXTParserTest {
     public void setUp() throws Exception {
         ParserMaker TXTmaker = getParserByName(ParserType.TXT);
         TXTparser = TXTmaker.createParser();
-        txtParser = new TXTParser();
         reader = new TXTReader();
     }
 
 
     @Test
-    public void shouldParseTXT() throws Exception {
-        List<Article> actual;
+    public void shouldParseAllTXTFromDirectory() throws Exception {
         List<Article> expected = new ArrayList<>();
+        List<Article> actual = new ArrayList<>();
 
-        actual = TXTparser.loadArticlesFromDirectory(Loader.getDirectory());
+        Article eTXT1 = TXTparser.loadArticleFromFile(Loader.getTxtArticle1());
+        Article eTXT2 = TXTparser.loadArticleFromFile(Loader.getTxtArticle2());
+        Article eTXT3 = TXTparser.loadArticleFromFile(Loader.getTxtArticle3());
+        expected.add(eTXT1);
+        expected.add(eTXT2);
+        expected.add(eTXT3);
 
-        expected.add(TXT_ARTICLE_1);
-        expected.add(TXT_ARTICLE_2);
-        expected.add(TXT_ARTICLE_3);
-
+        Article txt1 = reader.read(new File(Loader.getTxtArticle1()));
+        Article txt2 = reader.read(new File(Loader.getTxtArticle2()));
+        Article txt3 = reader.read(new File(Loader.getTxtArticle3()));
+        actual.add(txt1);
+        actual.add(txt2);
+        actual.add(txt3);
 
         assertEquals(expected, actual);
     }
 
-    @Test
-    public void shouldParseTXT1() throws Exception {
-        Article expected;
-        Article actual;
-
-        expected = TXTparser.loadArticleFromFile(Loader.getTxtArticle1());
-
-        Article actualArticle = reader.read(new File(Loader.getTxtArticle1()));
-        assertEquals(expected.getTitle(), actualArticle.getTitle());
-    }
 
     @Test
-    public void shouldReturnCorrectAuthorNameForStandardArticle() throws Exception {
+    public void shouldReturnCorrectAuthorNameForTXTArticleWithAuthor() throws Exception {
         Article article;
 
-        article = txtParser.loadArticleFromFile(Loader.getTxtArticle1());
+        article = TXTparser.loadArticleFromFile(Loader.getTxtArticle1());
         String expectedAuthorName = article.getAuthor();
 
         String actualAuthorName = TXT_ARTICLE_1.getAuthor();
@@ -104,10 +99,10 @@ public class TXTParserTest {
     }
 
     @Test
-    public void shouldReturnCorrectAuthorNameForArticleWithoutAuthor() throws Exception {
+    public void shouldReturnCorrectAuthorNameForTXTArticleWithoutAuthor() throws Exception {
         Article article;
 
-        article = txtParser.loadArticleFromFile(Loader.getTxtArticle3());
+        article = TXTparser.loadArticleFromFile(Loader.getTxtArticle3());
         String expectedAuthorName = article.getAuthor();
 
         String actualAuthorName = TXT_ARTICLE_3.getAuthor();
@@ -121,6 +116,19 @@ public class TXTParserTest {
     public void shouldThrowParserException() throws ParserException {
         thrown.expect(ParserException.class);
         TXTparser.loadArticlesFromDirectory(Loader.getFailDirectory());
+    }
+
+    @Test
+    public void shouldReturnCorrectAttributesForNonstandardTXTArticle() throws Exception {
+        Article expected;
+        Article actual;
+
+        expected = TXTparser.loadArticleFromFile(Loader.getTxtArticle2());
+
+        actual = TXT_ARTICLE_2;
+        assertEquals(expected.getTitle(), actual.getTitle());
+        assertEquals(expected.getAuthor(), actual.getAuthor());
+        logger.info(actual);
     }
 
 

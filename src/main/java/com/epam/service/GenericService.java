@@ -12,5 +12,7 @@ public interface GenericService<E, K> {
 
     void delete(K id) throws ServiceException;
 
+    void save(E entity) throws ServiceException;
+
     void update(E entity) throws ServiceException;
 }

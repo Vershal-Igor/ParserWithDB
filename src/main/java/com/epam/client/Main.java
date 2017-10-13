@@ -42,9 +42,9 @@ public class Main {
         Parser TXTparser = TXTmaker.createParser();
         List<Article> TXTarticles = TXTparser.loadArticlesFromDirectory(Loader.getDirectory());
 
-        articleService.loadArticles(XMLarticles);
-        articleService.loadArticles(JSONarticles);
-        articleService.loadArticles(TXTarticles);
+        articleService.saveArticles(XMLarticles);
+        articleService.saveArticles(JSONarticles);
+        articleService.saveArticles(TXTarticles);
 
         logger.info(articleService.findAll());
         articleService.deleteAll();

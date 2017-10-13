@@ -1,12 +1,8 @@
-/*
 
 package com.epam.dao.impl;
 
 import com.epam.entity.Article;
-import com.epam.parser.Loader;
-import com.epam.parser.Parser;
-import com.epam.parser.ParserMaker;
-import com.epam.parser.ParserType;
+import com.epam.entity.ArticleCreator;
 import com.github.springtestdbunit.DbUnitTestExecutionListener;
 import com.github.springtestdbunit.annotation.*;
 import com.github.springtestdbunit.assertion.DatabaseAssertionMode;
@@ -21,10 +17,12 @@ import org.springframework.test.context.support.DependencyInjectionTestExecution
 import org.springframework.test.context.support.DirtiesContextTestExecutionListener;
 import org.springframework.test.context.transaction.TransactionalTestExecutionListener;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.ResourceBundle;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static com.epam.parser.ParserMaker.getParserByName;
+
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:spring-test-config.xml"})
@@ -34,35 +32,85 @@ import static com.epam.parser.ParserMaker.getParserByName;
 
 
 public class ArticleDAOImplTest {
-    private ParserMaker XMLmaker;
-    private ParserMaker JSONmaker;
-    private ParserMaker TXTmaker;
-    private Parser XMLparser;
-    private Parser JSONparser;
-    private Parser TXTparser;
-    private List<Article> XMLarticles;
-    private List<Article> JSONarticles;
-    private List<Article> TXTarticles;
+
+    private static final ResourceBundle RB = ResourceBundle.getBundle("properties/common");
+
+    private static final Article JSON_ARTICLE_1 = new ArticleCreator()
+            .setTitle(RB.getString("JSON.TITLE.1"))
+            .setAuthor(RB.getString("JSON.AUTHOR.1"))
+            .setContents(RB.getString("JSON.CONTENTS.1"))
+            .create();
+
+    private static final Article JSON_ARTICLE_2 = new ArticleCreator()
+            .setTitle(RB.getString("JSON.TITLE.2"))
+            .setAuthor(RB.getString("JSON.AUTHOR.2"))
+            .setContents(RB.getString("JSON.CONTENTS.2"))
+            .create();
+
+    private static final Article JSON_ARTICLE_3 = new ArticleCreator()
+            .setTitle(RB.getString("JSON.TITLE.3"))
+            .setAuthor(RB.getString("JSON.AUTHOR.3"))
+            .setContents(RB.getString("JSON.CONTENTS.3"))
+            .create();
+
+    private static final Article TXT_ARTICLE_1 = new ArticleCreator()
+            .setTitle(RB.getString("TXT.TITLE.1"))
+            .setAuthor(RB.getString("TXT.AUTHOR.1"))
+            .setContents(RB.getString("TXT.CONTENTS.1"))
+            .create();
+
+    private static final Article TXT_ARTICLE_2 = new ArticleCreator()
+            .setTitle(RB.getString("TXT.TITLE.2"))
+            .setAuthor(RB.getString("TXT.AUTHOR.2"))
+            .setContents(RB.getString("TXT.CONTENTS.2"))
+            .create();
+
+    private static final Article TXT_ARTICLE_3 = new ArticleCreator()
+            .setTitle(RB.getString("TXT.TITLE.3"))
+            .setAuthor(RB.getString("TXT.AUTHOR.3"))
+            .setContents(RB.getString("TXT.CONTENTS.3"))
+            .create();
+
+    private static final Article XML_ARTICLE_1 = new ArticleCreator()
+            .setTitle(RB.getString("XML.TITLE.1"))
+            .setAuthor(RB.getString("XML.AUTHOR.1"))
+            .setContents(RB.getString("XML.CONTENTS.1"))
+            .create();
+
+    private static final Article XML_ARTICLE_2 = new ArticleCreator()
+            .setTitle(RB.getString("XML.TITLE.2"))
+            .setAuthor(RB.getString("XML.AUTHOR.2"))
+            .setContents(RB.getString("XML.CONTENTS.2"))
+            .create();
+
+    private static final Article XML_ARTICLE_3 = new ArticleCreator()
+            .setTitle(RB.getString("XML.TITLE.3"))
+            .setAuthor(RB.getString("XML.AUTHOR.3"))
+            .setContents(RB.getString("XML.CONTENTS.3"))
+            .create();
+
+    private List<Article> XMLarticles = new ArrayList<>();
+    private List<Article> JSONarticles = new ArrayList<>();
+    private List<Article> TXTarticles = new ArrayList<>();
 
     @Autowired
     ArticleDAOImpl articleDAO;
 
-
     @Before
     public void setUp() throws Exception {
-        XMLmaker = getParserByName(ParserType.XML);
-        XMLparser = XMLmaker.createParser();
-        XMLarticles = XMLparser.loadArticlesFromDirectory(Loader.getDirectory());
 
-        JSONmaker = getParserByName(ParserType.JSON);
-        JSONparser = JSONmaker.createParser();
-        JSONarticles = JSONparser.loadArticlesFromDirectory(Loader.getDirectory());
+        XMLarticles.add(XML_ARTICLE_1);
+        XMLarticles.add(XML_ARTICLE_2);
+        XMLarticles.add(XML_ARTICLE_3);
 
-        TXTmaker = getParserByName(ParserType.TXT);
-        TXTparser = TXTmaker.createParser();
-        TXTarticles = TXTparser.loadArticlesFromDirectory(Loader.getDirectory());
+        JSONarticles.add(JSON_ARTICLE_1);
+        JSONarticles.add(JSON_ARTICLE_2);
+        JSONarticles.add(JSON_ARTICLE_3);
+
+        TXTarticles.add(TXT_ARTICLE_1);
+        TXTarticles.add(TXT_ARTICLE_2);
+        TXTarticles.add(TXT_ARTICLE_3);
     }
-
 
     @DatabaseSetup("/com.epam.entity.article/article-data.xml")
     @DatabaseTearDown(value = "/databaseTearDown.xml",
@@ -79,17 +127,19 @@ public class ArticleDAOImplTest {
             type = DatabaseOperation.CLEAN_INSERT)
     @Test
     public void shouldFindByTitle() throws Exception {
-        Article actual;
         Article expected;
+        Article actual;
 
-        actual = articleDAO.findByTitle(Loader.getTitleArticle1());
-        expected = JSONparser.loadArticleFromFile(Loader.getJsonArticle1());
+        expected = JSON_ARTICLE_1;
+        String title = JSON_ARTICLE_1.getTitle();
 
-        assertThat(actual).isEqualTo(expected);
-        assertThat(actual).isNotNull();
-        assertThat(actual.getTitle()).isEqualTo(expected.getTitle());
-        assertThat(actual.getAuthor()).isEqualTo(expected.getAuthor());
-        assertThat(actual.getContents()).isEqualTo(expected.getContents());
+        actual = articleDAO.findByTitle(title);
+
+        assertThat(expected).isEqualTo(actual);
+        assertThat(expected).isNotNull();
+        assertThat(expected.getTitle()).isEqualTo(actual.getTitle());
+        assertThat(expected.getAuthor()).isEqualTo(actual.getAuthor());
+        assertThat(expected.getContents()).isEqualTo(actual.getContents());
     }
 
     @DatabaseSetup("/com.epam.entity.article/article-data.xml")
@@ -99,8 +149,8 @@ public class ArticleDAOImplTest {
             type = DatabaseOperation.CLEAN_INSERT)
     @Test
     public void shouldDeleteByTitle() throws Exception {
-        Article article = XMLparser.loadArticleFromFile(Loader.getXmlArticle2());
-        articleDAO.delete(article.getTitle());
+        String title = XML_ARTICLE_1.getTitle();
+        articleDAO.delete(title);
     }
 
     @DatabaseSetup("/com.epam.entity.article/article-data.xml")
@@ -131,15 +181,14 @@ public class ArticleDAOImplTest {
             type = DatabaseOperation.CLEAN_INSERT)
     @Test
     public void shouldUpdateArticle() throws Exception {
-        Article expected;
+        Article actual;
 
-        expected = TXTparser.loadArticleFromFile(Loader.getTxtArticle9());
-        expected.setAuthor("TEST AUTHOR");
-        expected.setContents("hey");
+        actual = TXT_ARTICLE_3;
+        actual.setAuthor("TEST AUTHOR");
+        actual.setContents("hey");
 
-        articleDAO.update(expected);
+        articleDAO.update(actual);
     }
-
 
     @DatabaseSetup("/com.epam.entity.article/load-article-data.xml")
     @ExpectedDatabase(assertionMode = DatabaseAssertionMode.NON_STRICT_UNORDERED,
@@ -147,10 +196,10 @@ public class ArticleDAOImplTest {
     @DatabaseTearDown(value = "/databaseTearDown.xml",
             type = DatabaseOperation.CLEAN_INSERT)
     @Test
-    public void shouldLoadArticle() throws Exception {
+    public void shouldSaveArticle() throws Exception {
         Article article;
 
-        article = JSONparser.loadArticleFromFile(Loader.getJsonArticle4());
+        article = JSON_ARTICLE_2;
 
         articleDAO.save(article);
     }
@@ -161,7 +210,7 @@ public class ArticleDAOImplTest {
     @DatabaseTearDown(value = "/databaseTearDown.xml",
             type = DatabaseOperation.CLEAN_INSERT)
     @Test
-    public void shouldLoadArticles() throws Exception {
+    public void shouldSaveArticles() throws Exception {
         articleDAO.saveArticles(JSONarticles);
     }
-}*/
+}

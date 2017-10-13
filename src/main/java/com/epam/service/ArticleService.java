@@ -7,9 +7,7 @@ import com.epam.service.exception.ServiceException;
 import java.util.List;
 
 public interface ArticleService extends GenericService<Article, String> {
-    void loadArticles(List<Article> articles) throws ServiceException;
-
-    void loadArticle(Article article) throws ServiceException;
+    void saveArticles(List<Article> articles) throws ServiceException;
 
     Article findByTitle(String title) throws ServiceException;
 

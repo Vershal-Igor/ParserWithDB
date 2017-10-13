@@ -95,7 +95,7 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public void loadArticles(List<Article> articles) throws ServiceException {
+    public void saveArticles(List<Article> articles) throws ServiceException {
         try {
             for (Article article : articles) {
                 Article inDatabase = articleDAO.findByTitle(article.getTitle());
@@ -112,7 +112,7 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public void loadArticle(Article article) throws ServiceException {
+    public void save(Article article) throws ServiceException {
         try {
             Article inDatabase = articleDAO.findByTitle(article.getTitle());
             if (inDatabase == null) {

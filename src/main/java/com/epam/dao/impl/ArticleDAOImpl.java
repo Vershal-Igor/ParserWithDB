@@ -25,9 +25,6 @@ public class ArticleDAOImpl implements ArticleDAO {
         this.sessionFactory = sessionFactory;
     }
 
-    public ArticleDAOImpl() {
-    }
-
     @Override
     public List<Article> findAll() throws DAOException {
         Session session = sessionFactory.openSession();
