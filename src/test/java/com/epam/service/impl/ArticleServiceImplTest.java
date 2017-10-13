@@ -5,9 +5,6 @@ import com.epam.dao.impl.ArticleDAOImpl;
 import com.epam.entity.Article;
 import com.epam.entity.ArticleCreator;
 import com.epam.parser.Loader;
-import com.epam.parser.Parser;
-import com.epam.parser.ParserMaker;
-import com.epam.parser.ParserType;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -163,6 +160,15 @@ public class ArticleServiceImplTest {
 
     @Test
     public void shouldUpdate() throws Exception {
+        Article expectedArticle = TXT_ARTICLE_3;
+
+        expectedArticle.setAuthor("NEW AUTHOR");
+
+        articleDAO.update(expectedArticle);
+        articleService.update(expectedArticle);
+
+        assertEquals(expectedArticle.getAuthor(),"NEW AUTHOR");
+        verify(articleDAO, times(2)).update(expectedArticle);
     }
 
     @Test
@@ -174,6 +180,7 @@ public class ArticleServiceImplTest {
 
         articleService.saveArticles(JSONarticles);
 
+        assertNotNull(expectedArticle);
         verify(articleDAO).saveArticles(JSONarticles);
     }
 
@@ -184,6 +191,7 @@ public class ArticleServiceImplTest {
 
         articleService.save(expectedArticle);
 
+        assertNotNull(expectedArticle);
         verify(articleDAO, times(2)).save(expectedArticle);
     }
 
