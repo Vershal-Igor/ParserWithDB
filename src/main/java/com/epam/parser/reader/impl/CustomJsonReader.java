@@ -1,4 +1,4 @@
-package com.epam.parser.impl.json;
+package com.epam.parser.reader.impl;
 
 import com.epam.entity.Article;
 import com.epam.parser.Loader;

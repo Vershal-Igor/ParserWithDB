@@ -4,7 +4,6 @@ package com.epam.parser.reader.impl;
 import com.epam.entity.Article;
 import com.epam.parser.Loader;
 import com.epam.parser.exception.ParserException;
-import com.epam.parser.impl.json.CustomJsonReader;
 import com.epam.parser.reader.Reader;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;

@@ -49,7 +49,6 @@ public class TXTParserTest {
     private Parser TXTparser;
     private Reader reader;
 
-
     @Rule
     public final ExpectedException thrown = ExpectedException.none();
 

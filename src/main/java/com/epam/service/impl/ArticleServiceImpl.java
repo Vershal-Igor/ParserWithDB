@@ -16,14 +16,12 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.ResourceBundle;
 
-
-/*@Transactional(propagation = Propagation.REQUIRED, rollbackFor = {ObjectNotFoundException.class,
-        ConstraintViolationException.class})*/
 public class ArticleServiceImpl implements ArticleService {
     private static final Logger logger = Logger.getLogger(ArticleServiceImpl.class);
     private static final ResourceBundle rb = ResourceBundle.getBundle("properties/common");
 
     private ArticleDAOImpl articleDAO;
+
 
     public void setArticleDAO(ArticleDAOImpl articleDAO) {
         this.articleDAO = articleDAO;

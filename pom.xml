@@ -18,6 +18,7 @@
         <mysql.version>5.1.41</mysql.version>
         <spring-framework-version>4.3.12.RELEASE</spring-framework-version>
         <hibernate-version>5.2.11.Final</hibernate-version>
+        <!--<hibernate-version>4.3.10.Final</hibernate-version>-->
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <org.assertj.version>3.7.0</org.assertj.version>
     </properties>
