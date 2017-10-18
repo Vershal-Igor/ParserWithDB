@@ -1,0 +1,157 @@
+2017-10-15 12:05:52 INFO  support.DefaultTestContextBootstrapper:187 - Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5c5a1b69, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3701eaf6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@627551fb, com.github.springtestdbunit.DbUnitTestExecutionListener@2b552920]
+2017-10-15 12:05:52 INFO  xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [spring-test-config.xml]
+2017-10-15 12:05:52 INFO  support.GenericApplicationContext:583 - Refreshing org.springframework.context.support.GenericApplicationContext@e320068: startup date [Sun Oct 15 12:05:52 MSK 2017]; root of context hierarchy
+2017-10-15 12:05:53 INFO  hibernate.Version:45 - HHH000412: Hibernate Core {5.2.11.Final}
+2017-10-15 12:05:53 INFO  cfg.Environment:213 - HHH000206: hibernate.properties not found
+2017-10-15 12:05:53 INFO  common.Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-15 12:05:54 INFO  dialect.Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2017-10-15 12:05:55 INFO  hibernate5.HibernateTransactionManager:357 - Using DataSource [org.apache.commons.dbcp.BasicDataSource@49438269] of Hibernate SessionFactory for HibernateTransactionManager
+2017-10-15 12:05:57 INFO  internal.DefaultDeleteEventListener:191 - HHH000114: Handling transient entity in delete processing
+2017-10-15 12:05:58 INFO  internal.QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-15 12:06:00 INFO  epam.LoaderTest:76 - is ["src\main\resources\files\Article2.xml", "src\main\resources\files\Article3.xml", "src\main\resources\files\Article5.xml"]
+2017-10-15 12:06:00 INFO  epam.LoaderTest:52 - is ["src\main\resources\files\Article1.json", "src\main\resources\files\Article4.json", "src\main\resources\files\Article6.json"]
+2017-10-15 12:06:00 INFO  epam.LoaderTest:64 - is ["src\main\resources\files\Article7.txt", "src\main\resources\files\Article8.txt", "src\main\resources\files\TestArticle9.txt"]
+2017-10-15 12:06:01 INFO  json.JSONParserTest:91 - Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction
+2017-10-15 12:06:01 INFO  json.JSONParserTest:71 - [Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9, Author: UNKNOWN; Title: Dependency Injection and Inversion of Control, Author: UNKNOWN; Title: Hibernate ORM 5.2.11.Final User Guide: Introduction]
+2017-10-15 12:06:01 ERROR parser.Loader:203 - IO_EXCEPTION
+java.nio.file.NoSuchFileException: src\main\resources\file
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsDirectoryStream.<init>(WindowsDirectoryStream.java:86)
+	at sun.nio.fs.WindowsFileSystemProvider.newDirectoryStream(WindowsFileSystemProvider.java:518)
+	at java.nio.file.Files.newDirectoryStream(Files.java:525)
+	at com.epam.parser.Loader.loadFilesFromDirectoryByType(Loader.java:195)
+	at com.epam.parser.impl.AbstractParser.loadArticlesFromDirectory(AbstractParser.java:24)
+	at com.epam.parser.impl.json.JSONParserTest.shouldThrowParserException(JSONParserTest.java:99)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2017-10-15 12:06:01 INFO  json.JSONParserTest:81 - Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9
+2017-10-15 12:06:01 ERROR parser.Loader:203 - IO_EXCEPTION
+java.nio.file.NoSuchFileException: src\main\resources\file
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsDirectoryStream.<init>(WindowsDirectoryStream.java:86)
+	at sun.nio.fs.WindowsFileSystemProvider.newDirectoryStream(WindowsFileSystemProvider.java:518)
+	at java.nio.file.Files.newDirectoryStream(Files.java:525)
+	at com.epam.parser.Loader.loadFilesFromDirectoryByType(Loader.java:195)
+	at com.epam.parser.impl.AbstractParser.loadArticlesFromDirectory(AbstractParser.java:24)
+	at com.epam.parser.impl.txt.TXTParserTest.shouldThrowParserException(TXTParserTest.java:117)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2017-10-15 12:06:01 INFO  txt.TXTParserTest:130 - Author: Ricky Ho; Title: Notes on Oracle Coherence.
+2017-10-15 12:06:01 INFO  txt.TXTParserTest:97 - Jonathan Hult
+2017-10-15 12:06:01 INFO  txt.TXTParserTest:111 - UNKNOWN
+2017-10-15 12:06:02 INFO  xml.XMLParserTest:101 - Author: Sander Mak; Title: The Java Platform module system
+2017-10-15 12:06:02 ERROR parser.Loader:203 - IO_EXCEPTION
+java.nio.file.NoSuchFileException: src\main\resources\file
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsDirectoryStream.<init>(WindowsDirectoryStream.java:86)
+	at sun.nio.fs.WindowsFileSystemProvider.newDirectoryStream(WindowsFileSystemProvider.java:518)
+	at java.nio.file.Files.newDirectoryStream(Files.java:525)
+	at com.epam.parser.Loader.loadFilesFromDirectoryByType(Loader.java:195)
+	at com.epam.parser.impl.AbstractParser.loadArticlesFromDirectory(AbstractParser.java:24)
+	at com.epam.parser.impl.xml.XMLParserTest.shouldThrowParserException(XMLParserTest.java:133)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.rules.ExpectedException$ExpectedExceptionStatement.evaluate(ExpectedException.java:239)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+2017-10-15 12:06:02 INFO  xml.XMLParserTest:127 - Author: Thorben Janssen; Title: UNKNOWN
+2017-10-15 12:06:02 INFO  xml.XMLParserTest:114 - Author: UNKNOWN; Title: Spring Framework - Overview
+2017-10-15 12:06:02 INFO  impl.JSONReaderTest:43 - Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9
+2017-10-15 12:06:02 INFO  impl.TXTReaderTest:43 - Author: Ricky Ho; Title: Notes on Oracle Coherence.
+2017-10-15 12:06:02 INFO  impl.TXTReaderTest:59 - Ricky Ho
+2017-10-15 12:06:02 INFO  impl.XMLReaderTest:43 - Author: Thorben Janssen; Title: UNKNOWN
+2017-10-15 12:06:07 INFO  impl.ArticleServiceImpl:47 - Article with title "What are the most exciting features that are expected to be released in Java 9" was find: Author: Alex Zhitnitsky; Title: What are the most exciting features that are expected to be released in Java 9
+2017-10-15 12:06:07 INFO  support.GenericApplicationContext:984 - Closing org.springframework.context.support.GenericApplicationContext@e320068: startup date [Sun Oct 15 12:05:52 MSK 2017]; root of context hierarchy
