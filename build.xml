@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project name="AntTest" default="compile" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
+
+    <property name="jdk.version" value="1.8"/>
+    <property name="lib.dir" value="lib"/>
+    <property name="build.dir" value="build"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+    <property name="buildTest.dir" value="${build.dir}/tests"/>
+    <property name="src.dir" value="src/main/java"/>
+    <property name="test.dir" value="src/test/java"/>
+
+    <path id="lib.path.id">
+        <fileset dir="${lib.dir}"/>
+    </path>
+
+    <!-- ivy start; getting dependencies -->
+    <target name="resolve" description="retrieve dependencies with ivy">
+        <echo message="Getting dependencies..."/>
+        <ivy:retrieve/>
+    </target>
+
+    <!-- clean -->
+    <target name="clean" description="clean up">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <!-- init -->
+    <target name="init" description="create folders">
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${classes.dir}"/>
+        <mkdir dir="${buildTest.dir}"/>
+    </target>
+
+    <!-- compile -->
+    <target name="compile" depends="init, resolve" description="compile source code">
+        <javac destdir="${classes.dir}"
+               source="1.8">
+            <src>
+                <pathelement location="${src.dir}"/>
+            </src>
+            <classpath refid="lib.path.id"/>
+        </javac>
+    </target>
+
+    <!-- compile test -->
+    <target name="compile-tests" depends="compile" description="compile test code">
+        <javac destdir="${buildTest.dir}"
+               source="1.8">
+            <src>
+                <pathelement location="${test.dir}"/>
+            </src>
+            <classpath>
+                <path refid="lib.path.id"/>
+                <pathelement location="${classes.dir}"/>
+            </classpath>
+        </javac>
+    </target>
+
+</project>
