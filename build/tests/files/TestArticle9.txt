@@ -1,5 +1,0 @@
-TEST ARTICLE.
-Coherense cache: fast & easy
-Something else
-Written by:
-Some contents here.

@@ -2,15 +2,18 @@
 
 <project name="Parser" default="compile" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
 
-    <property name="jdk.version" value="1.8"/>
     <property name="lib.dir" value="lib"/>
     <property name="build.dir" value="build"/>
     <property name="classes.dir" value="${build.dir}/classes"/>
     <property name="buildTest.dir" value="${build.dir}/tests"/>
+    <property name="test.reports" value="${build.dir}/tests/reports"/>
     <property name="src.dir" value="src/main/java"/>
     <property name="src.resources.dir" value="src/main/resources"/>
     <property name="test.dir" value="src/test/java"/>
     <property name="test.resources.dir" value="src/test/resources"/>
+    <property name="file.jar" value="${build.dir}/Parser.jar"/>
+    <property name="jar.dir" value="${build.dir}/jar"/>
+    <property name="main-class" value="com.epam.client.Main"/>
 
     <path id="lib.path.id">
         <fileset dir="${lib.dir}"/>
@@ -35,7 +38,7 @@
 
     <!-- compile -->
     <target name="compile" depends="init, resolve" description="compile source code">
-        <javac destdir="${classes.dir}"
+        <javac includeantruntime="false" destdir="${classes.dir}"
                source="1.8">
             <src>
                 <pathelement location="${src.dir}"/>
@@ -49,7 +52,7 @@
 
     <!-- compile test -->
     <target name="compile-tests" depends="compile" description="compile test code">
-        <javac destdir="${buildTest.dir}"
+        <javac includeantruntime="false" destdir="${buildTest.dir}"
                source="1.8">
             <src>
                 <pathelement location="${test.dir}"/>
@@ -64,15 +67,17 @@
         </copy>
     </target>
 
-    <!-- test -->
-    <target name="test" depends="compile-tests" description="Run the test cases">
-        <junit printSummary="yes">
+    <!-- run-test -->
+    <target name="run-test" depends="compile-tests" description="run the test cases">
+        <mkdir dir="${test.reports}"/>
+        <junit printSummary="yes" errorproperty="test.failed" failureproperty="test.failed">
             <classpath>
                 <path refid="lib.path.id"/>
                 <pathelement location="${classes.dir}"/>
                 <pathelement location="${buildTest.dir}"/>
             </classpath>
-            <batchtest unless="test">
+            <formatter type="xml"/>
+            <batchtest todir="${test.reports}" unless="test">
                 <fileset dir="${test.dir}">
                     <include name="**/Test*.java"/>
                     <include name="**/*Test.java"/>
@@ -81,6 +86,28 @@
                 </fileset>
             </batchtest>
         </junit>
+        <fail if="test.failed"
+              message="At least one test has failed. See logs (in ${test.reports})"/>
+    </target>
+
+    <!-- package.jar -->
+    <target name="package.jar" depends="compile">
+        <mkdir dir="${jar.dir}"/>
+        <jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="${main-class}"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <!-- run program -->
+    <target name="run" depends="package.jar">
+        <java fork="true" classname="${main-class}">
+            <classpath>
+                <path refid="lib.path.id"/>
+                <path location="${jar.dir}/${ant.project.name}.jar"/>
+            </classpath>
+        </java>
     </target>
 
 </project>
